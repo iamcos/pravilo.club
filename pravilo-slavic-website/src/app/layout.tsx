@@ -1,23 +1,23 @@
 import type { Metadata } from 'next'
-import { Crimson_Text, Open_Sans, Playfair_Display } from 'next/font/google'
+import { Inter, Playfair_Display, JetBrains_Mono } from 'next/font/google'
 import './globals.css'
 
-const crimsonText = Crimson_Text({
+const inter = Inter({
   subsets: ['latin'],
-  weight: ['400', '600', '700'],
-  variable: '--slavic-font-primary',
-})
-
-const openSans = Open_Sans({
-  subsets: ['latin'],
-  weight: ['400', '600', '700'],
-  variable: '--slavic-font-secondary',
+  weight: ['400', '500', '600', '700'],
+  variable: '--font-primary',
 })
 
 const playfairDisplay = Playfair_Display({
   subsets: ['latin'],
   weight: ['400', '600', '700'],
-  variable: '--slavic-font-accent',
+  variable: '--font-accent',
+})
+
+const jetbrainsMono = JetBrains_Mono({
+  subsets: ['latin'],
+  weight: ['400', '500', '600'],
+  variable: '--font-mono',
 })
 
 export const metadata: Metadata = {
@@ -44,7 +44,7 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
       </head>
-      <body className={`${crimsonText.variable} ${openSans.variable} ${playfairDisplay.variable}`}>
+      <body className={`${inter.variable} ${playfairDisplay.variable} ${jetbrainsMono.variable}`}>
         {children}
       </body>
     </html>
