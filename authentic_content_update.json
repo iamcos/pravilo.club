@@ -1,84 +1,49 @@
-
 {
-  "header": {
-    "logo": "Pravilo.Club",
-    "navigation": [
-      "About Pravilo",
-      "Services & Pricing",
-      "Outdoor Adventures",
-      "Handcrafted Artisan",
-      "Wellness Therapies",
-      "Spiritual Practices",
-      "Schedule & Booking",
-      "Contact"
-    ]
-  },
   "main_content": {
-    "headline": "Unlock your body’s potential. Experience deep spinal decompression and release chronic tension in just one session.",
-    "sub_headline": "PRAVILO.club - AUTHENTIC GRAVITY DECOMPRESSION THERAPY",
-    "introductory_offer": "Experience the Traditional Russian Method for Spinal Health. Relieve chronic back and joint pain. Increase flexibility and range of motion. Build functional, full-body strength.",
-    "call_to_action": "Reserve your spot"
+    "headline": "Unlock your body's potential in paradise. Experience deep spinal decompression and release chronic tension in our tropical wellness sanctuary.",
+    "sub_headline": "PRAVILO.club - TROPICAL WELLNESS & AUTHENTIC GRAVITY DECOMPRESSION THERAPY",
+    "introductory_offer": "Experience the Traditional Russian Method for Spinal Health in a pristine tropical environment. Relieve chronic back and joint pain while surrounded by healing ocean air and natural beauty. Increase flexibility and range of motion through our unique combination of ancient wisdom and tropical wellness practices.",
+    "call_to_action": "Reserve Your Tropical Wellness Experience"
   },
   "what_is_pravilo": {
     "title": "\"Pravilo\": Ancient Russian Method for Modern Healing",
     "text": "The \"Pravilo\" system is a traditional Russian method for spinal decompression and joint health that has been practiced for generations. This ancient Slavic approach to wellness focuses on natural body mechanics and the healing power of gravity and body weight.\n\n\"Pravilo\" is a unique ancient Slavic simulator that allows for deep decompression of the spine and joints. It works through natural horizontal traction, where the impact on the entire musculoskeletal system is evenly distributed under the mass of one's own body (with the possibility of adjusting the load). This helps relieve compression from intervertebral discs, free pinched nerves, and improve blood circulation.\n\nThe system gently stretches muscles, ligaments, and tendons, increasing flexibility and joint mobility. In just a few minutes, you will feel stress and fatigue disappear, replaced by energy, lightness, and harmony. This is not magic, but a time-tested method that allows you to unleash ancient strength and become stronger not only physically but also in life. The effectiveness of the \"Pravilo\" simulator has been proven by functional and practical research, and now it's available in a tropical setting where the natural environment enhances the healing process."
   },
-  "who_is_pravilo_for": {
-    "title": "Who is Pravilo for?",
-    "text": "Pravilo is beneficial for a wide range of people, from athletes looking to enhance performance and recovery, to office workers seeking relief from a sedentary lifestyle. It is particularly effective for individuals dealing with non-acute back pain, spinal misalignments (like scoliosis), osteochondrosis, and joint stiffness. Essentially, anyone who wants to become stronger, more flexible, and feel better in their body can benefit."  },  "about_misha": {    "title": "About Mikhail Bondaruk",    "introduction": "My journey began with an interest in the body and health. I studied at a sports college, then at a physical education university in Moscow. But the most important lessons I learned not from books, but from living experience — through travels, searches, and personal experiments with body and consciousness.",    "journey": {      "title": "Life Path",      "text": "From a young age, I was drawn to freedom and to exploring the limits of human capabilities. For many years, I hitchhiked across Russia and post-Soviet countries, traveling almost the entire southern coast of the country. Then I went further — to Asia. I visited Thailand, Malaysia, Indonesia, Cambodia, Vietnam. For a long time, I lived in India and South Korea. These travels taught me lightness, the ability to adapt, and to see beauty in simplicity."    },    "nutrition_experiments": {      "title": "Nutrition Experiments",      "text": "Yes, nutrition became a real laboratory for me. I tried different systems: vegetarianism, veganism, raw foodism. In the end, I was on a raw food diet for eight years, three and a half of which were pure fruitarianism. Later, I added softer regimes. These years showed me how nutrition affects the body and psyche, energy levels, and clarity of consciousness.\nI practiced long fasts, did cleanses, including with castor oil, and drank fresh juices. All of this was part of a large experiment in self-healing. I realized that the body can renew itself and launch its regenerative processes if given the right conditions."    },    "current_practices": {      "title": "Current Practices",      "text": "Currently, I combine several directions.\nI work as a massage master — relieving spasms, working through trigger points, restoring body mobility. I have an individual approach: sometimes gently, sometimes deeply, but always with attention to the person.\nI teach the Alpha Gravity system and create Pravilo simulators that help develop strength, flexibility, and ligament health.\nI practice hardening — I walk in shorts and a T-shirt all year round, even in winter.\nI use breathing techniques, prayers, and internal gratitude practices. I believe that health begins not only with the body but also with the soul, with an inner connection to God and the universe."    },    "other_talents": {      "title": "Other Talents",      "text": "Yes, I cannot limit myself to just one direction.\nI am a musician, playing the jaw harp and harmonica. Music for me is a way to connect with myself and people.\nI engage in handicrafts — creating jewelry from wire and crystals. For me, it's a meditative process in which unique things are born.\nI love to travel — it continues to be a part of me."    },    "worldview_change": {      "title": "Change in Worldview",      "text": "Yes, there were difficult periods — losing my home, business, family. At some point, I found myself in survival mode. But it was precisely this that made me deeper. I learned to perceive events as facts, not just as emotions. I realized that emotions are energy: they can nourish us, or they can destroy us. It all depends on the quality and direction.\nMy philosophy of relationships, for example, is built on trust and sincerity. I see them as a common “well of energy” from which two people can draw if they care for it together."    },    "summary": {      "title": "Brief Description of the Path",      "text": "My path is a path of search. A search for health, freedom, and harmony. I don't stand still: I try, I explore, I change. I can say that my main teachers are life, the road, and the people I met."    }  },
-  "services": [
-    {
-      "name": "Discovery Session",
-      "description": "Perfect for First-Time Clients. Your introduction to the world of Pravilo. This comprehensive session includes a detailed consultation to understand your goals, a full warm-up, a guided decompression experience, and a personal plan for moving forward.",
-      "whats_included": [
-        "90-Minute Total Experience",
-        "Personal Health & Posture Assessment",
-        "Guided Pravilo Decompression",
-        "Post-Session Integration & Recommendations"
-      ],
-      "call_to_action": "Book Your First Session"
+  "about_misha": {
+    "title": "About Mikhail Bondaruk",
+    "introduction": "My journey began with an interest in the body and health. I studied at a sports college, then at a physical education university in Moscow. But the most important lessons I learned not from books, but from living experience — through travels, searches, and personal experiments with body and consciousness.",
+    "journey": {
+      "title": "Life Path",
+      "text": "From a young age, I was drawn to freedom and to exploring the limits of human capabilities. For many years, I hitchhiked across Russia and post-Soviet countries, traveling almost the entire southern coast of the country. Then I went further — to Asia. I visited Thailand, Malaysia, Indonesia, Cambodia, Vietnam. For a long time, I lived in India and South Korea. These travels taught me lightness, the ability to adapt, and to see beauty in simplicity."
     },
-    {
-      "name": "The Alignment Package",
-      "description": "Our Recommended Path for Lasting Results. Commit to meaningful change. This package of five sessions allows your body to adapt, release deep-seated tension, and build foundational strength. Ideal for addressing specific issues and creating lasting postural improvements.",
-      "whats_included": [
-        "Five 75-Minute Sessions",
-        "Progressive Strength & Flexibility Program",
-        "Ongoing Progress Tracking",
-        "Priority Booking"
-      ],
-      "call_to_action": "Begin Your Alignment"
+    "current_practices": {
+      "title": "Current Practices",
+      "text": "Currently, I combine several directions.\nI work as a massage master — relieving spasms, working through trigger points, restoring body mobility. I have an individual approach: sometimes gently, sometimes deeply, but always with attention to the person.\nI teach the Alpha Gravity system and create Pravilo simulators that help develop strength, flexibility, and ligament health.\nI practice hardening — I walk in shorts and a T-shirt all year round, even in winter.\nI use breathing techniques, prayers, and internal gratitude practices. I believe that health begins not only with the body but also with the soul, with an inner connection to God and the universe."
     },
-    {
-      "name": "Single Session",
-      "description": "For Returning Clients. A single, focused session to maintain your progress, work through a specific tension point, or simply as a powerful tune-up for your body and mind. Available after completing a Discovery Session.",
-      "whats_included": [
-        "75-Minute Total Experience",
-        "Targeted Warm-up & Decompression",
-        "Perfect for Maintenance"
-      ],
-      "call_to_action": "Schedule a Session"
+    "other_talents": {
+      "title": "Other Talents",
+      "text": "Yes, I cannot limit myself to just one direction.\nI am a musician, playing the jaw harp and harmonica. Music for me is a way to connect with myself and people.\nI engage in handicrafts — creating jewelry from wire and crystals. For me, it's a meditative process in which unique things are born.\nI love to travel — it continues to be a part of me."
     }
-  ],
+  },
   "outdoor_adventures": {
-    "title": "Nature Connection & Adventure Services",
-    "description": "Connect with nature and discover hidden gems through guided experiences that combine physical wellness with environmental awareness.",
+    "title": "Tropical Nature Connection & Adventure Services",
+    "description": "Connect with nature and discover hidden gems through guided experiences that combine physical wellness with environmental awareness in tropical settings.",
     "services": [
       {
         "name": "Bamboo Forest Trekking",
-        "description": "Explore ancient bamboo groves on guided nature walks. Learn about local flora, practice mindful walking, and experience the therapeutic benefits of forest bathing.",
+        "description": "Explore ancient bamboo groves on guided nature walks. Learn about local flora, practice mindful walking, and experience the therapeutic benefits of forest bathing in a tropical setting.",
         "duration": "3-4 hours",
         "includes": ["Professional guide", "Nature education", "Mindful walking techniques", "Photography opportunities"]
       },
       {
         "name": "Waterfall Discovery Tours",
-        "description": "Discover hidden waterfalls and natural pools. Perfect for those seeking adventure, relaxation, and connection with pristine nature.",
+        "description": "Discover hidden waterfalls and natural pools. Perfect for those seeking adventure, relaxation, and connection with pristine nature in tropical environments.",
         "duration": "4-5 hours",
         "includes": ["Multiple waterfall visits", "Swimming opportunities", "Natural rock formations", "Picnic spots"]
       },
       {
         "name": "Sunset Mountain Hiking",
-        "description": "Moderate hiking trails leading to panoramic viewpoints. Experience breathtaking sunsets while building endurance and connecting with the landscape.",
+        "description": "Moderate hiking trails leading to panoramic viewpoints. Experience breathtaking sunsets while building endurance and connecting with the tropical landscape.",
         "duration": "2-3 hours",
         "includes": ["Scenic viewpoints", "Sunset timing", "Trail snacks", "Photography guidance"]
       },
@@ -219,34 +184,6 @@
         "elements": ["Group healing", "Community bonding", "Shared intentions", "Collective energy"],
         "benefits": ["Community healing", "Social connection", "Collective energy", "Shared growth"]
       }
-    ]
-  },
-  "testimonials": [
-    {
-      "name": "Ksenia",
-      "text": "I am sincerely grateful to our friend Misha, with the help of his method of hypoxytherapy a very strong generic program came off. I felt such incredible sensations in my body, this rebirth, which changes the life of another person, allows you to look at the world with different eyes."
-    },
-    {
-      "name": "Mr. Kim",
-      "text": "After the session I feel very relaxed. The back pain is gone."
-    }
-  ],
-  "contact": {
-    "title": "Location & Contact Info",
-    "location": "Pravilo: A Decompression Therapy"
-  },
-  "footer": {
-    "about": "History",
-    "privacy": [
-      "Privacy Policy",
-      "Terms and Conditions",
-      "Contact Us"
-    ],
-    "social": "Telegram",
-    "credits": "Designed with WordPress",
-    "language_switcher": [
-      "English",
-      "Русский"
     ]
   }
 }
