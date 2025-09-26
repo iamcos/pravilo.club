@@ -1,0 +1,191 @@
+---
+export interface Props {
+  title: string;
+  description: string;
+  lang: string;
+}
+
+const { title, description, lang } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang={lang}>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{title}</title>
+  <meta name="description" content={description}>
+  <meta name="author" content="Mikhail Bondaruk">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://pravilo.club/">
+  <meta property="og:title" content={title}>
+  <meta property="og:description" content={description}>
+  
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://pravilo.club/">
+  <meta property="twitter:title" content={title}>
+  <meta property="twitter:description" content={description}>
+</head>
+<body>
+  <header class="header">
+    <nav class="nav">
+      <div class="nav-brand">
+        <a href="/" class="logo">Pravilo.Club</a>
+      </div>
+      <div class="nav-menu">
+        <a href="/ru/" class="nav-link">Русский</a>
+        <a href="/en/" class="nav-link">English</a>
+        <a href="/zh/" class="nav-link">中文</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <slot />
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Pravilo.Club</h3>
+          <p>Древняя славянская мудрость для современного здоровья</p>
+        </div>
+        <div class="footer-section">
+          <h4>Языки</h4>
+          <a href="/ru/">Русский</a>
+          <a href="/en/">English</a>
+          <a href="/zh/">中文</a>
+        </div>
+        <div class="footer-section">
+          <h4>Контакты</h4>
+          <p>Остров Ко Панган, Таиланд</p>
+          <p>+66 XX XXX XXXX</p>
+          <p>info@pravilo.club</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Pravilo.Club. Все права защищены.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
+
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    background: #000000;
+    color: #ffffff;
+    line-height: 1.6;
+  }
+
+  .header {
+    background: #1a1a1a;
+    border-bottom: 1px solid #333;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #d4af37;
+    text-decoration: none;
+  }
+
+  .nav-menu {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .nav-link {
+    color: #cccccc;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+
+  .nav-link:hover {
+    color: #d4af37;
+    background: #333;
+  }
+
+  .footer {
+    background: #1a1a1a;
+    border-top: 1px solid #333;
+    padding: 3rem 0 1rem;
+    margin-top: 4rem;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+
+  .footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .footer-section h3,
+  .footer-section h4 {
+    color: #d4af37;
+    margin-bottom: 1rem;
+  }
+
+  .footer-section a {
+    color: #cccccc;
+    text-decoration: none;
+    display: block;
+    margin: 0.5rem 0;
+    transition: color 0.3s ease;
+  }
+
+  .footer-section a:hover {
+    color: #d4af37;
+  }
+
+  .footer-bottom {
+    text-align: center;
+    padding-top: 2rem;
+    border-top: 1px solid #333;
+    color: #888;
+  }
+
+  @media (max-width: 768px) {
+    .nav {
+      flex-direction: column;
+      gap: 1rem;
+    }
+    
+    .nav-menu {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+</style>

@@ -1,0 +1,252 @@
+
+{
+  "header": {
+    "logo": "Pravilo.Club",
+    "navigation": [
+      "About Pravilo",
+      "Services & Pricing",
+      "Outdoor Adventures",
+      "Handcrafted Artisan",
+      "Wellness Therapies",
+      "Spiritual Practices",
+      "Schedule & Booking",
+      "Contact"
+    ]
+  },
+  "main_content": {
+    "headline": "Unlock your body’s potential. Experience deep spinal decompression and release chronic tension in just one session.",
+    "sub_headline": "PRAVILO.club - AUTHENTIC GRAVITY DECOMPRESSION THERAPY",
+    "introductory_offer": "Experience the Traditional Russian Method for Spinal Health. Relieve chronic back and joint pain. Increase flexibility and range of motion. Build functional, full-body strength.",
+    "call_to_action": "Reserve your spot"
+  },
+  "what_is_pravilo": {
+    "title": "\"Pravilo\": Ancient Russian Method for Modern Healing",
+    "text": "The \"Pravilo\" system is a traditional Russian method for spinal decompression and joint health that has been practiced for generations. This ancient Slavic approach to wellness focuses on natural body mechanics and the healing power of gravity and body weight.\n\n\"Pravilo\" is a unique ancient Slavic simulator that allows for deep decompression of the spine and joints. It works through natural horizontal traction, where the impact on the entire musculoskeletal system is evenly distributed under the mass of one's own body (with the possibility of adjusting the load). This helps relieve compression from intervertebral discs, free pinched nerves, and improve blood circulation.\n\nThe system gently stretches muscles, ligaments, and tendons, increasing flexibility and joint mobility. In just a few minutes, you will feel stress and fatigue disappear, replaced by energy, lightness, and harmony. This is not magic, but a time-tested method that allows you to unleash ancient strength and become stronger not only physically but also in life. The effectiveness of the \"Pravilo\" simulator has been proven by functional and practical research, and now it's available in a tropical setting where the natural environment enhances the healing process."
+  },
+  "who_is_pravilo_for": {
+    "title": "Who is Pravilo for?",
+    "text": "Pravilo is beneficial for a wide range of people, from athletes looking to enhance performance and recovery, to office workers seeking relief from a sedentary lifestyle. It is particularly effective for individuals dealing with non-acute back pain, spinal misalignments (like scoliosis), osteochondrosis, and joint stiffness. Essentially, anyone who wants to become stronger, more flexible, and feel better in their body can benefit."  },  "about_misha": {    "title": "About Mikhail Bondaruk",    "introduction": "My journey began with an interest in the body and health. I studied at a sports college, then at a physical education university in Moscow. But the most important lessons I learned not from books, but from living experience — through travels, searches, and personal experiments with body and consciousness.",    "journey": {      "title": "Life Path",      "text": "From a young age, I was drawn to freedom and to exploring the limits of human capabilities. For many years, I hitchhiked across Russia and post-Soviet countries, traveling almost the entire southern coast of the country. Then I went further — to Asia. I visited Thailand, Malaysia, Indonesia, Cambodia, Vietnam. For a long time, I lived in India and South Korea. These travels taught me lightness, the ability to adapt, and to see beauty in simplicity."    },    "nutrition_experiments": {      "title": "Nutrition Experiments",      "text": "Yes, nutrition became a real laboratory for me. I tried different systems: vegetarianism, veganism, raw foodism. In the end, I was on a raw food diet for eight years, three and a half of which were pure fruitarianism. Later, I added softer regimes. These years showed me how nutrition affects the body and psyche, energy levels, and clarity of consciousness.\nI practiced long fasts, did cleanses, including with castor oil, and drank fresh juices. All of this was part of a large experiment in self-healing. I realized that the body can renew itself and launch its regenerative processes if given the right conditions."    },    "current_practices": {      "title": "Current Practices",      "text": "Currently, I combine several directions.\nI work as a massage master — relieving spasms, working through trigger points, restoring body mobility. I have an individual approach: sometimes gently, sometimes deeply, but always with attention to the person.\nI teach the Alpha Gravity system and create Pravilo simulators that help develop strength, flexibility, and ligament health.\nI practice hardening — I walk in shorts and a T-shirt all year round, even in winter.\nI use breathing techniques, prayers, and internal gratitude practices. I believe that health begins not only with the body but also with the soul, with an inner connection to God and the universe."    },    "other_talents": {      "title": "Other Talents",      "text": "Yes, I cannot limit myself to just one direction.\nI am a musician, playing the jaw harp and harmonica. Music for me is a way to connect with myself and people.\nI engage in handicrafts — creating jewelry from wire and crystals. For me, it's a meditative process in which unique things are born.\nI love to travel — it continues to be a part of me."    },    "worldview_change": {      "title": "Change in Worldview",      "text": "Yes, there were difficult periods — losing my home, business, family. At some point, I found myself in survival mode. But it was precisely this that made me deeper. I learned to perceive events as facts, not just as emotions. I realized that emotions are energy: they can nourish us, or they can destroy us. It all depends on the quality and direction.\nMy philosophy of relationships, for example, is built on trust and sincerity. I see them as a common “well of energy” from which two people can draw if they care for it together."    },    "summary": {      "title": "Brief Description of the Path",      "text": "My path is a path of search. A search for health, freedom, and harmony. I don't stand still: I try, I explore, I change. I can say that my main teachers are life, the road, and the people I met."    }  },
+  "services": [
+    {
+      "name": "Discovery Session",
+      "description": "Perfect for First-Time Clients. Your introduction to the world of Pravilo. This comprehensive session includes a detailed consultation to understand your goals, a full warm-up, a guided decompression experience, and a personal plan for moving forward.",
+      "whats_included": [
+        "90-Minute Total Experience",
+        "Personal Health & Posture Assessment",
+        "Guided Pravilo Decompression",
+        "Post-Session Integration & Recommendations"
+      ],
+      "call_to_action": "Book Your First Session"
+    },
+    {
+      "name": "The Alignment Package",
+      "description": "Our Recommended Path for Lasting Results. Commit to meaningful change. This package of five sessions allows your body to adapt, release deep-seated tension, and build foundational strength. Ideal for addressing specific issues and creating lasting postural improvements.",
+      "whats_included": [
+        "Five 75-Minute Sessions",
+        "Progressive Strength & Flexibility Program",
+        "Ongoing Progress Tracking",
+        "Priority Booking"
+      ],
+      "call_to_action": "Begin Your Alignment"
+    },
+    {
+      "name": "Single Session",
+      "description": "For Returning Clients. A single, focused session to maintain your progress, work through a specific tension point, or simply as a powerful tune-up for your body and mind. Available after completing a Discovery Session.",
+      "whats_included": [
+        "75-Minute Total Experience",
+        "Targeted Warm-up & Decompression",
+        "Perfect for Maintenance"
+      ],
+      "call_to_action": "Schedule a Session"
+    }
+  ],
+  "outdoor_adventures": {
+    "title": "Nature Connection & Adventure Services",
+    "description": "Connect with nature and discover hidden gems through guided experiences that combine physical wellness with environmental awareness.",
+    "services": [
+      {
+        "name": "Bamboo Forest Trekking",
+        "description": "Explore ancient bamboo groves on guided nature walks. Learn about local flora, practice mindful walking, and experience the therapeutic benefits of forest bathing.",
+        "duration": "3-4 hours",
+        "includes": ["Professional guide", "Nature education", "Mindful walking techniques", "Photography opportunities"]
+      },
+      {
+        "name": "Waterfall Discovery Tours",
+        "description": "Discover hidden waterfalls and natural pools. Perfect for those seeking adventure, relaxation, and connection with pristine nature.",
+        "duration": "4-5 hours",
+        "includes": ["Multiple waterfall visits", "Swimming opportunities", "Natural rock formations", "Picnic spots"]
+      },
+      {
+        "name": "Sunset Mountain Hiking",
+        "description": "Moderate hiking trails leading to panoramic viewpoints. Experience breathtaking sunsets while building endurance and connecting with the landscape.",
+        "duration": "2-3 hours",
+        "includes": ["Scenic viewpoints", "Sunset timing", "Trail snacks", "Photography guidance"]
+      },
+      {
+        "name": "Beach Camping Experience",
+        "description": "Overnight beach camping with traditional fire-making, stargazing, and sunrise meditation. Learn survival skills while enjoying pristine coastal environments.",
+        "duration": "Overnight",
+        "includes": ["Camping equipment", "Fire-making workshop", "Stargazing session", "Sunrise meditation"]
+      },
+      {
+        "name": "Coastal Rock Climbing",
+        "description": "Beginner-friendly rock climbing on natural coastal formations. Build strength, confidence, and enjoy spectacular ocean views.",
+        "duration": "3-4 hours",
+        "includes": ["Safety equipment", "Basic climbing instruction", "Ocean views", "Strength building"]
+      }
+    ]
+  },
+  "handcrafted_artisan": {
+    "title": "Handcrafted Artisan Creations",
+    "description": "Unique handmade jewelry and functional art pieces created with natural materials and traditional techniques.",
+    "services": [
+      {
+        "name": "Wire-Wrapped Crystal Jewelry",
+        "description": "Custom jewelry pieces featuring natural crystals, stones, and metals. Each piece is individually crafted using traditional wire-wrapping techniques.",
+        "materials": ["Natural crystals", "Copper wire", "Silver accents", "Local stones"],
+        "types": ["Necklaces", "Bracelets", "Rings", "Earrings", "Pendants"]
+      },
+      {
+        "name": "Wooden Pipe Crafting",
+        "description": "Hand-carved wooden pipes made from sustainable hardwoods. Each piece is unique, featuring natural wood grain patterns and ergonomic design.",
+        "materials": ["Hardwood varieties", "Natural finishes", "Metal wire accents", "Stone inlays"],
+        "features": ["Ergonomic design", "Natural wood grain", "Custom sizing", "Artistic carving"]
+      },
+      {
+        "name": "Coral & Shell Jewelry",
+        "description": "Ocean-inspired jewelry using ethically sourced coral and shell materials. Perfect for beach lovers and nature enthusiasts.",
+        "materials": ["Ethical coral", "Natural shells", "Sea glass", "Ocean stones"],
+        "types": ["Ocean-themed necklaces", "Shell bracelets", "Coral earrings", "Sea glass pendants"]
+      },
+      {
+        "name": "Custom Design Consultation",
+        "description": "Personal consultation to create unique pieces tailored to your style, energy, and intentions. Perfect for special occasions or personal meaning.",
+        "includes": ["Design consultation", "Material selection", "Custom sizing", "Personal symbolism"]
+      }
+    ]
+  },
+  "wellness_therapies": {
+    "title": "Holistic Wellness & Bodywork",
+    "description": "Professional therapeutic services focused on restoring balance, relieving tension, and promoting natural healing processes.",
+    "services": [
+      {
+        "name": "Deep Tissue Massage",
+        "description": "Therapeutic massage targeting chronic tension, muscle knots, and postural imbalances. Combines various techniques for maximum relief and relaxation.",
+        "techniques": ["Deep tissue work", "Trigger point therapy", "Myofascial release", "Swedish massage"],
+        "benefits": ["Pain relief", "Improved circulation", "Stress reduction", "Better sleep"]
+      },
+      {
+        "name": "Spinal Alignment Therapy",
+        "description": "Gentle, non-invasive techniques to improve spinal alignment and joint mobility. Focuses on natural body mechanics and postural correction.",
+        "techniques": ["Gentle adjustments", "Postural assessment", "Mobility exercises", "Alignment education"],
+        "benefits": ["Reduced back pain", "Improved posture", "Better mobility", "Preventive care"]
+      },
+      {
+        "name": "Energy Balancing Session",
+        "description": "Holistic approach combining massage, energy work, and breathing techniques to restore natural energy flow and emotional balance.",
+        "techniques": ["Energy work", "Breathing exercises", "Relaxation techniques", "Chakra balancing"],
+        "benefits": ["Emotional release", "Energy restoration", "Mental clarity", "Inner peace"]
+      },
+      {
+        "name": "Sports Recovery Massage",
+        "description": "Specialized massage for athletes and active individuals. Focuses on muscle recovery, injury prevention, and performance optimization.",
+        "techniques": ["Sports massage", "Stretching", "Recovery protocols", "Injury prevention"],
+        "benefits": ["Faster recovery", "Injury prevention", "Performance enhancement", "Flexibility improvement"]
+      }
+    ]
+  },
+  "spiritual_practices": {
+    "title": "Ancient Wisdom & Spiritual Practices",
+    "description": "Traditional practices and initiations rooted in ancient wisdom, adapted for modern seekers on their spiritual journey.",
+    "services": [
+      {
+        "name": "Sacred Fire Ceremony",
+        "description": "Traditional fire ceremony for purification, intention setting, and spiritual connection. Experience the transformative power of sacred flames.",
+        "elements": ["Sacred fire", "Intention setting", "Purification rituals", "Community sharing"],
+        "benefits": ["Spiritual cleansing", "Clarity of purpose", "Energy renewal", "Community bonding"]
+      },
+      {
+        "name": "Nature Initiation Ritual",
+        "description": "Powerful initiation ceremony in natural settings. Connect with elemental forces and receive guidance for your spiritual path.",
+        "elements": ["Natural setting", "Elemental connection", "Personal guidance", "Sacred symbols"],
+        "benefits": ["Spiritual awakening", "Nature connection", "Personal guidance", "Life direction"]
+      },
+      {
+        "name": "Ancestral Wisdom Circle",
+        "description": "Ceremony honoring ancestors and connecting with ancestral wisdom. Learn traditional practices and receive ancestral guidance.",
+        "elements": ["Ancestral honoring", "Wisdom sharing", "Traditional practices", "Family connection"],
+        "benefits": ["Ancestral connection", "Wisdom integration", "Family healing", "Cultural appreciation"]
+      },
+      {
+        "name": "Elemental Balancing Ritual",
+        "description": "Sacred ritual to balance the four elements within yourself. Experience harmony and alignment with natural forces.",
+        "elements": ["Earth connection", "Water purification", "Fire transformation", "Air clarity"],
+        "benefits": ["Elemental balance", "Inner harmony", "Natural alignment", "Spiritual growth"]
+      },
+      {
+        "name": "Threshold Crossing Ceremony",
+        "description": "Sacred ceremony for life transitions, new beginnings, and personal transformation. Mark important life changes with intention and ceremony.",
+        "elements": ["Transition marking", "Intention setting", "Symbolic rituals", "Community support"],
+        "benefits": ["Life transitions", "New beginnings", "Personal growth", "Community support"]
+      },
+      {
+        "name": "Sacred Plant Medicine Circle",
+        "description": "Traditional plant medicine ceremony for healing, insight, and spiritual connection. Experience the wisdom of sacred plants in a safe, guided setting.",
+        "elements": ["Sacred plants", "Guided journey", "Healing intentions", "Integration support"],
+        "benefits": ["Deep healing", "Spiritual insight", "Plant wisdom", "Personal transformation"]
+      },
+      {
+        "name": "Moon Cycle Ceremonies",
+        "description": "Ceremonies aligned with lunar cycles for intention setting, release, and manifestation. Connect with natural rhythms and cosmic energies.",
+        "elements": ["Lunar alignment", "Intention work", "Release rituals", "Manifestation practices"],
+        "benefits": ["Natural rhythms", "Intention manifestation", "Emotional release", "Cosmic connection"]
+      },
+      {
+        "name": "Sacred Sound Healing",
+        "description": "Traditional sound healing using ancient instruments and vocal techniques. Experience the healing power of sacred sounds and vibrations.",
+        "elements": ["Ancient instruments", "Vocal toning", "Sound frequencies", "Vibrational healing"],
+        "benefits": ["Sound healing", "Vibrational therapy", "Emotional release", "Spiritual connection"]
+      },
+      {
+        "name": "Vision Quest Preparation",
+        "description": "Preparation and guidance for personal vision quests and spiritual journeys. Learn traditional practices for deep spiritual exploration.",
+        "elements": ["Quest preparation", "Traditional practices", "Spiritual guidance", "Safety protocols"],
+        "benefits": ["Spiritual preparation", "Personal growth", "Traditional wisdom", "Safe exploration"]
+      },
+      {
+        "name": "Community Healing Circle",
+        "description": "Group healing ceremony for community bonding, collective healing, and shared spiritual experience. Build connections through sacred practice.",
+        "elements": ["Group healing", "Community bonding", "Shared intentions", "Collective energy"],
+        "benefits": ["Community healing", "Social connection", "Collective energy", "Shared growth"]
+      }
+    ]
+  },
+  "testimonials": [
+    {
+      "name": "Ksenia",
+      "text": "I am sincerely grateful to our friend Misha, with the help of his method of hypoxytherapy a very strong generic program came off. I felt such incredible sensations in my body, this rebirth, which changes the life of another person, allows you to look at the world with different eyes."
+    },
+    {
+      "name": "Mr. Kim",
+      "text": "After the session I feel very relaxed. The back pain is gone."
+    }
+  ],
+  "contact": {
+    "title": "Location & Contact Info",
+    "location": "Pravilo: A Decompression Therapy"
+  },
+  "footer": {
+    "about": "History",
+    "privacy": [
+      "Privacy Policy",
+      "Terms and Conditions",
+      "Contact Us"
+    ],
+    "social": "Telegram",
+    "credits": "Designed with WordPress",
+    "language_switcher": [
+      "English",
+      "Русский"
+    ]
+  }
+}

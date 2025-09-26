@@ -1,0 +1,325 @@
+---
+import Layout from '../../components/Layout.astro';
+import { getContent } from '../../utils/content';
+
+const content = await getContent('zh');
+---
+
+<Layout title="Pravilo.Club - 古代斯拉夫智慧健康" description="传统俄罗斯脊柱减压方法在热带天堂" lang="zh">
+  <main class="hero">
+    <div class="hero-content">
+      <h1 class="hero-title">{content.main_content.headline}</h1>
+      <p class="hero-subtitle">{content.main_content.sub_headline}</p>
+      <p class="hero-description">{content.main_content.introductory_offer}</p>
+      <div class="hero-buttons">
+        <a href="#services" class="btn btn-primary">{content.main_content.call_to_action}</a>
+        <a href="#about" class="btn btn-secondary">了解更多</a>
+      </div>
+    </div>
+  </main>
+
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-title">{content.what_is_pravilo.title}</h2>
+      <div class="about-content">
+        <p class="about-text">{content.what_is_pravilo.text}</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="who-for" class="section">
+    <div class="container">
+      <h2 class="section-title">{content.who_is_pravilo_for.title}</h2>
+      <div class="about-content">
+        <p class="about-text">{content.who_is_pravilo_for.text}</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="about-misha" class="section">
+    <div class="container">
+      <h2 class="section-title">{content.about_misha.title}</h2>
+      <div class="about-content">
+        <p class="about-text">{content.about_misha.introduction}</p>
+        <div class="misha-sections">
+          <div class="misha-section">
+            <h3>{content.about_misha.journey.title}</h3>
+            <p>{content.about_misha.journey.text}</p>
+          </div>
+          <div class="misha-section">
+            <h3>{content.about_misha.nutrition_experiments.title}</h3>
+            <p>{content.about_misha.nutrition_experiments.text}</p>
+          </div>
+          <div class="misha-section">
+            <h3>{content.about_misha.current_practices.title}</h3>
+            <p>{content.about_misha.current_practices.text}</p>
+          </div>
+          <div class="misha-section">
+            <h3>{content.about_misha.other_talents.title}</h3>
+            <p>{content.about_misha.other_talents.text}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="section services">
+    <div class="container">
+      <h2 class="section-title">服务与定价</h2>
+      <div class="services-grid">
+        {content.services.map(service => (
+          <div class="service-card">
+            <h3>{service.name}</h3>
+            <p>{service.description}</p>
+            <div class="service-price">{service.price}</div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section contact">
+    <div class="container">
+      <h2 class="section-title">联系方式</h2>
+      <div class="contact-content">
+        <div class="contact-info">
+          <h3>联系我们</h3>
+          <p>泰国帕岸岛</p>
+          <div class="contact-details">
+            <p><strong>电话:</strong> +66 XX XXX XXXX</p>
+            <p><strong>邮箱:</strong> info@pravilo.club</p>
+          </div>
+        </div>
+        <form class="contact-form">
+          <input type="text" placeholder="您的姓名" required>
+          <input type="email" placeholder="邮箱" required>
+          <textarea placeholder="留言" required></textarea>
+          <button type="submit" class="btn btn-primary">发送</button>
+        </form>
+      </div>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .hero {
+    background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%);
+    color: #ffffff;
+    padding: 4rem 0;
+    text-align: center;
+  }
+
+  .hero-title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #d4af37;
+  }
+
+  .hero-subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    opacity: 0.9;
+  }
+
+  .hero-description {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    opacity: 0.8;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .btn {
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+
+  .btn-primary {
+    background: #d4af37;
+    color: #000;
+  }
+
+  .btn-primary:hover {
+    background: #ff6b35;
+    transform: translateY(-2px);
+  }
+
+  .btn-secondary {
+    background: transparent;
+    color: #d4af37;
+    border: 2px solid #d4af37;
+  }
+
+  .btn-secondary:hover {
+    background: #d4af37;
+    color: #000;
+  }
+
+  .section {
+    padding: 4rem 0;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+
+  .section-title {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    color: #d4af37;
+  }
+
+  .about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: start;
+  }
+
+  .about-text {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #cccccc;
+  }
+
+  .misha-sections {
+    display: grid;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+
+  .misha-section {
+    padding: 1.5rem;
+    background: #1a1a1a;
+    border-radius: 10px;
+    border-left: 4px solid #d4af37;
+  }
+
+  .misha-section h3 {
+    color: #d4af37;
+    margin-bottom: 1rem;
+  }
+
+  .about-features {
+    display: grid;
+    gap: 1.5rem;
+  }
+
+  .feature {
+    padding: 1.5rem;
+    background: #1a1a1a;
+    border-radius: 10px;
+    border-left: 4px solid #d4af37;
+  }
+
+  .feature h3 {
+    color: #d4af37;
+    margin-bottom: 0.5rem;
+  }
+
+  .services {
+    background: #1a1a1a;
+  }
+
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+
+  .service-card {
+    background: #000;
+    padding: 2rem;
+    border-radius: 10px;
+    border: 1px solid #333;
+    transition: transform 0.3s ease;
+  }
+
+  .service-card:hover {
+    transform: translateY(-5px);
+    border-color: #d4af37;
+  }
+
+  .service-card h3 {
+    color: #d4af37;
+    margin-bottom: 1rem;
+  }
+
+  .service-price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #ff6b35;
+    margin-top: 1rem;
+  }
+
+  .contact-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+  }
+
+  .contact-info h3 {
+    color: #d4af37;
+    margin-bottom: 1rem;
+  }
+
+  .contact-details p {
+    margin: 0.5rem 0;
+    color: #cccccc;
+  }
+
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    padding: 1rem;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background: #1a1a1a;
+    color: #fff;
+    font-size: 1rem;
+  }
+
+  .contact-form input:focus,
+  .contact-form textarea:focus {
+    outline: none;
+    border-color: #d4af37;
+  }
+
+  @media (max-width: 768px) {
+    .hero-title {
+      font-size: 2rem;
+    }
+    
+    .about-content,
+    .contact-content {
+      grid-template-columns: 1fr;
+    }
+    
+    .hero-buttons {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+</style>
