@@ -3,177 +3,450 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pravilo.Club - Древняя Славянская Мудрость</title>
+    <title>Древняя Сила - Славянские Практики</title>
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { 
-            font-family: Arial, sans-serif; 
-            background: #000000; 
-            color: #ffffff; 
-            line-height: 1.6; 
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
-        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
-        header { 
-            background: #1a1a1a; 
-            padding: 1rem 0; 
-            position: fixed; 
-            width: 100%; 
-            top: 0; 
-            z-index: 1000; 
-            border-bottom: 2px solid #d4af37; 
+
+        body {
+            font-family: 'Georgia', serif;
+            background: #000000;
+            color: #ffffff;
+            line-height: 1.6;
         }
-        nav { display: flex; justify-content: space-between; align-items: center; }
-        .logo { font-size: 2rem; font-weight: bold; color: #d4af37; }
-        .nav-links { display: flex; list-style: none; gap: 2rem; }
-        .nav-links a { color: #ffffff; text-decoration: none; }
-        .nav-links a:hover { color: #d4af37; }
-        .hero { 
-            background: #000000; 
-            min-height: 100vh; 
-            display: flex; 
-            align-items: center; 
-            justify-content: center; 
-            text-align: center; 
-            padding-top: 80px; 
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
         }
-        .hero h1 { font-size: 4rem; margin-bottom: 1rem; color: #d4af37; }
-        .hero h2 { font-size: 1.5rem; margin-bottom: 2rem; color: #d4af37; }
-        .hero p { font-size: 1.2rem; margin-bottom: 3rem; color: #cccccc; }
-        .btn { 
-            padding: 15px 30px; 
-            border: none; 
-            border-radius: 50px; 
-            font-size: 1.1rem; 
-            cursor: pointer; 
-            text-decoration: none; 
-            display: inline-block; 
-            margin: 0 10px; 
+
+        /* Header */
+        header {
+            background: #0a0a0a;
+            padding: 1rem 0;
+            border-bottom: 2px solid #d4af37;
         }
-        .btn-primary { background: #d4af37; color: #000000; }
-        .btn-secondary { background: transparent; color: #d4af37; border: 2px solid #d4af37; }
-        .section { padding: 5rem 0; background: #000000; }
-        .section:nth-child(even) { background: #0a0a0a; }
-        .section h2 { font-size: 3rem; text-align: center; margin-bottom: 3rem; color: #d4af37; }
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
-        .card { 
-            background: #1a1a1a; 
-            padding: 2rem; 
-            border-radius: 15px; 
-            border: 1px solid #333333; 
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
-        .card h3 { color: #d4af37; margin-bottom: 1rem; }
-        .card ul { list-style: none; }
-        .card li { padding: 0.5rem 0; color: #cccccc; }
-        footer { background: #000000; padding: 3rem 0; text-align: center; border-top: 2px solid #d4af37; }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #d4af37;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: #ffffff;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #d4af37;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%);
+            padding: 4rem 0;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: #d4af37;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            color: #cccccc;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 12px 24px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn-primary {
+            background: #d4af37;
+            color: #000000;
+        }
+
+        .btn-primary:hover {
+            background: #b8941f;
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: #d4af37;
+            border: 2px solid #d4af37;
+        }
+
+        .btn-secondary:hover {
+            background: #d4af37;
+            color: #000000;
+        }
+
+        /* Sections */
+        .section {
+            padding: 4rem 0;
+        }
+
+        .section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            color: #d4af37;
+            text-align: center;
+        }
+
+        .section p {
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+            color: #cccccc;
+        }
+
+        /* About Section */
+        .about {
+            background: #1a1a1a;
+        }
+
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .about-text {
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        .about-image {
+            background: #2a2a2a;
+            height: 300px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #d4af37;
+            font-size: 1.2rem;
+        }
+
+        /* Services Section */
+        .services {
+            background: #000000;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .service-card {
+            background: #1a1a1a;
+            padding: 2rem;
+            border-radius: 10px;
+            border: 1px solid #333333;
+            text-align: center;
+        }
+
+        .service-card h3 {
+            color: #d4af37;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+        .service-card p {
+            color: #cccccc;
+            margin-bottom: 1.5rem;
+        }
+
+        /* Misha Section */
+        .misha {
+            background: #1a1a1a;
+        }
+
+        .misha-content {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .misha-image {
+            background: #2a2a2a;
+            height: 400px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #d4af37;
+            font-size: 1.2rem;
+        }
+
+        .misha-text h3 {
+            color: #d4af37;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .misha-text p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+        }
+
+        /* Contact Section */
+        .contact {
+            background: #000000;
+        }
+
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: #d4af37;
+            font-weight: bold;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #333333;
+            border-radius: 5px;
+            background: #1a1a1a;
+            color: #ffffff;
+            font-size: 1rem;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #d4af37;
+        }
+
+        .form-group textarea {
+            height: 120px;
+            resize: vertical;
+        }
+
+        /* Footer */
+        footer {
+            background: #0a0a0a;
+            padding: 2rem 0;
+            text-align: center;
+            border-top: 2px solid #d4af37;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .footer-links a {
+            color: #cccccc;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer-links a:hover {
+            color: #d4af37;
+        }
+
+        .footer-text {
+            color: #888888;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .about-content,
+            .misha-content {
+                grid-template-columns: 1fr;
+            }
+
+            .nav-links {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .footer-content {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
     </style>
 </head>
 <body>
+    <!-- Header -->
     <header>
-        <nav class="container">
-            <div class="logo">Pravilo.Club</div>
-            <ul class="nav-links">
-                <li><a href="#home">Главная</a></li>
-                <li><a href="#about">О Правиле</a></li>
-                <li><a href="#services">Услуги</a></li>
-                <li><a href="#contact">Контакты</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <nav>
+                <div class="logo">Древняя Сила</div>
+                <ul class="nav-links">
+                    <li><a href="#home">Главная</a></li>
+                    <li><a href="#about">О нас</a></li>
+                    <li><a href="#services">Услуги</a></li>
+                    <li><a href="#misha">Миша</a></li>
+                    <li><a href="#contact">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <section id="home" class="hero">
-        <div>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
             <h1>Древняя Сила</h1>
-            <h2>Традиционное Русское Здоровье</h2>
-            <p>Откройте потенциал своего тела с помощью древнего славянского метода декомпрессии позвоночника в тропическом раю Ко Пангана</p>
-            <a href="#contact" class="btn btn-primary">Записаться на Сеанс</a>
-            <a href="#about" class="btn btn-secondary">Узнать Больше</a>
+            <p>Славянские практики и духовное развитие</p>
+            <div class="cta-buttons">
+                <a href="#contact" class="btn btn-primary">Записаться на Сеанс</a>
+                <a href="#about" class="btn btn-secondary">Узнать Больше</a>
+            </div>
         </div>
     </section>
 
-    <section id="about" class="section">
+    <!-- About Section -->
+    <section class="section about" id="about">
         <div class="container">
-            <h2>Что такое Правило?</h2>
-            <div class="grid">
-                <div>
-                    <h3>Древняя Славянская Мудрость</h3>
-                    <p>Правило — это уникальный древнеславянский тренажер, который позволяет достичь глубокой декомпрессии позвоночника и суставов.</p>
+            <h2>О нас</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Добро пожаловать в мир древних славянских практик и духовного развития. Мы помогаем людям найти свой путь через традиционные методы исцеления и духовного роста.</p>
+                    <p>Наши практики основаны на многовековых традициях славянской культуры и направлены на восстановление связи с природой и внутренней силой.</p>
                 </div>
-                <div class="card">
-                    <h3>Преимущества Метода</h3>
-                    <ul>
-                        <li>Быстрые результаты уже после первого сеанса</li>
-                        <li>100% безопасность</li>
-                        <li>Естественность</li>
-                        <li>Глубокое расслабление</li>
-                    </ul>
+                <div class="about-image">
+                    Славянские Символы
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="services" class="section">
+    <!-- Services Section -->
+    <section class="section services" id="services">
         <div class="container">
             <h2>Наши Услуги</h2>
-            <div class="grid">
-                <div class="card">
-                    <h3>Декомпрессия Позвоночника</h3>
-                    <p>Глубокое расслабление и вытяжение позвоночника</p>
-                    <ul>
-                        <li>90-минутная сессия</li>
-                        <li>Персональная оценка</li>
-                        <li>Индивидуальный подход</li>
-                    </ul>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Духовные Сеансы</h3>
+                    <p>Индивидуальные сеансы духовного развития и исцеления</p>
                 </div>
-                <div class="card">
-                    <h3>Природная Терапия</h3>
-                    <p>Соединение с природой через лесные прогулки</p>
-                    <ul>
-                        <li>Бамбуковые леса</li>
-                        <li>Водопады</li>
-                        <li>Закатные походы</li>
-                    </ul>
+                <div class="service-card">
+                    <h3>Славянские Обряды</h3>
+                    <p>Традиционные обряды и ритуалы для различных жизненных ситуаций</p>
                 </div>
-                <div class="card">
-                    <h3>Массаж и Терапия</h3>
-                    <p>Профессиональный массаж и восстановительные сеансы</p>
-                    <ul>
-                        <li>Глубокий массаж</li>
-                        <li>Выравнивание позвоночника</li>
-                        <li>Энергетический баланс</li>
-                    </ul>
+                <div class="service-card">
+                    <h3>Консультации</h3>
+                    <p>Персональные консультации по духовным вопросам</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="contact" class="section">
+    <!-- Misha Section -->
+    <section class="section misha" id="misha">
         <div class="container">
-            <h2>Свяжитесь с Нами</h2>
-            <div class="grid">
-                <div class="card">
-                    <h3>Контактная Информация</h3>
-                    <p><strong>Email:</strong> info@pravilo.club</p>
-                    <p><strong>Telegram:</strong> @pravilo_club</p>
-                    <p><strong>Местоположение:</strong> Ко Панган, Таиланд</p>
-                    <p><strong>Часы работы:</strong> Пн-Вс: 8:00 - 20:00</p>
+            <div class="misha-content">
+                <div class="misha-image">
+                    Фото Миши
                 </div>
-                <div class="card">
-                    <h3>Почему выбирают нас?</h3>
-                    <ul>
-                        <li>Аутентичные славянские методы</li>
-                        <li>Индивидуальный подход</li>
-                        <li>Тропическая среда</li>
-                        <li>Опытный мастер</li>
-                    </ul>
+                <div class="misha-text">
+                    <h3>Миша - Духовный Наставник</h3>
+                    <p>Миша является опытным практиком славянских традиций с многолетним опытом в области духовного развития и исцеления.</p>
+                    <p>Он помогает людям найти свой путь через древние практики и современные методы духовного роста.</p>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <h2>Свяжитесь с нами</h2>
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="name">Имя</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Сообщение</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Отправить</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer>
         <div class="container">
-            <p>© 2024 Pravilo.Club. Все права защищены.</p>
-            <p>Древняя славянская мудрость для современного здоровья</p>
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>&copy; 2024 Древняя Сила. Все права защищены.</p>
+                </div>
+                <ul class="footer-links">
+                    <li><a href="#home">Главная</a></li>
+                    <li><a href="#about">О нас</a></li>
+                    <li><a href="#services">Услуги</a></li>
+                    <li><a href="#contact">Контакты</a></li>
+                </ul>
+            </div>
         </div>
     </footer>
 </body>
