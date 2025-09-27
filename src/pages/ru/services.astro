@@ -1,0 +1,375 @@
+---
+import Layout from '../../components/Layout.astro';
+import { getContent } from '../../utils/content';
+
+const content = await getContent('ru');
+---
+
+<Layout title="Услуги и цены - Pravilo.Club" description="Профессиональные услуги декомпрессии позвоночника и оздоровления" lang="ru">
+  <main class="page-hero">
+    <div class="container">
+      <h1 class="page-title">Услуги и цены</h1>
+      <p class="page-subtitle">Профессиональные услуги для вашего здоровья и благополучия</p>
+    </div>
+  </main>
+
+  <section class="section services-section">
+    <div class="container">
+      <h2 class="section-title">Сессии Правила</h2>
+      <div class="services-grid">
+        {content.services.map(service => (
+          <div class="service-card">
+            <h3>{service.name}</h3>
+            <p class="service-description">{service.description}</p>
+            <div class="service-includes">
+              <h4>Что включено:</h4>
+              <ul>
+                {service.whats_included.map(item => (
+                  <li>{item}</li>
+                ))}
+              </ul>
+            </div>
+            <div class="service-cta">
+              <a href="/ru/contact" class="btn btn-primary">{service.call_to_action}</a>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section process-section">
+    <div class="container">
+      <h2 class="section-title">Как проходит сессия</h2>
+      <div class="process-steps">
+        <div class="step">
+          <div class="step-number">1</div>
+          <h3>Консультация</h3>
+          <p>Обсуждение ваших целей, проблем и ожиданий. Оценка текущего состояния здоровья и осанки.</p>
+        </div>
+        <div class="step">
+          <div class="step-number">2</div>
+          <h3>Разминка</h3>
+          <p>Подготовка тела к декомпрессии через специальные упражнения и дыхательные техники.</p>
+        </div>
+        <div class="step">
+          <div class="step-number">3</div>
+          <h3>Декомпрессия</h3>
+          <p>Основная работа на тренажере Правило под руководством опытного инструктора.</p>
+        </div>
+        <div class="step">
+          <div class="step-number">4</div>
+          <h3>Интеграция</h3>
+          <p>Время для восстановления и обсуждения ощущений. Рекомендации для домашней практики.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section benefits-section">
+    <div class="container">
+      <h2 class="section-title">Результаты сессий</h2>
+      <div class="benefits-grid">
+        <div class="benefit-item">
+          <h3>Немедленные эффекты</h3>
+          <ul>
+            <li>Снятие напряжения в спине и шее</li>
+            <li>Улучшение осанки</li>
+            <li>Повышение гибкости</li>
+            <li>Глубокое расслабление</li>
+          </ul>
+        </div>
+        <div class="benefit-item">
+          <h3>Долгосрочные результаты</h3>
+          <ul>
+            <li>Улучшение кровообращения</li>
+            <li>Укрепление мышечного корсета</li>
+            <li>Снижение хронических болей</li>
+            <li>Повышение энергетики</li>
+          </ul>
+        </div>
+        <div class="benefit-item">
+          <h3>Для кого подходит</h3>
+          <ul>
+            <li>Офисные работники</li>
+            <li>Спортсмены</li>
+            <li>Люди с проблемами спины</li>
+            <li>Все, кто хочет улучшить здоровье</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section cta-section">
+    <div class="container">
+      <div class="cta-content">
+        <h2>Готовы начать?</h2>
+        <p>Запишитесь на первую сессию и ощутите на себе древнюю силу Правила</p>
+        <div class="cta-buttons">
+          <a href="/ru/contact" class="btn btn-primary">Записаться на сессию</a>
+          <a href="/ru/about" class="btn btn-secondary">Узнать больше о Правиле</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .page-hero {
+    background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%);
+    color: #ffffff;
+    padding: 6rem 0 4rem;
+    text-align: center;
+  }
+
+  .page-title {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #d4af37;
+  }
+
+  .page-subtitle {
+    font-size: 1.3rem;
+    opacity: 0.9;
+  }
+
+  .section {
+    padding: 4rem 0;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+
+  .section-title {
+    font-size: 2.5rem;
+    color: #d4af37;
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  .services-section {
+    background: #1a1a1a;
+  }
+
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+  }
+
+  .service-card {
+    background: #000;
+    padding: 2.5rem;
+    border-radius: 15px;
+    border: 1px solid #333;
+    transition: all 0.3s ease;
+  }
+
+  .service-card:hover {
+    transform: translateY(-5px);
+    border-color: #d4af37;
+    box-shadow: 0 10px 30px rgba(212, 175, 55, 0.2);
+  }
+
+  .service-card h3 {
+    color: #d4af37;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .service-description {
+    color: #cccccc;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+  }
+
+  .service-includes {
+    margin-bottom: 2rem;
+  }
+
+  .service-includes h4 {
+    color: #d4af37;
+    margin-bottom: 0.5rem;
+  }
+
+  .service-includes ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .service-includes li {
+    color: #cccccc;
+    margin-bottom: 0.5rem;
+    padding-left: 1.5rem;
+    position: relative;
+  }
+
+  .service-includes li:before {
+    content: "✓";
+    color: #d4af37;
+    position: absolute;
+    left: 0;
+  }
+
+  .service-cta {
+    text-align: center;
+  }
+
+  .process-section {
+    background: #000;
+  }
+
+  .process-steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+  }
+
+  .step {
+    text-align: center;
+    padding: 2rem;
+  }
+
+  .step-number {
+    width: 60px;
+    height: 60px;
+    background: #d4af37;
+    color: #000;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0 auto 1rem;
+  }
+
+  .step h3 {
+    color: #d4af37;
+    margin-bottom: 1rem;
+  }
+
+  .step p {
+    color: #cccccc;
+    line-height: 1.6;
+  }
+
+  .benefits-section {
+    background: #1a1a1a;
+  }
+
+  .benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+
+  .benefit-item {
+    background: #000;
+    padding: 2rem;
+    border-radius: 10px;
+    border-left: 4px solid #d4af37;
+  }
+
+  .benefit-item h3 {
+    color: #d4af37;
+    margin-bottom: 1rem;
+  }
+
+  .benefit-item ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .benefit-item li {
+    color: #cccccc;
+    margin-bottom: 0.5rem;
+    padding-left: 1.5rem;
+    position: relative;
+  }
+
+  .benefit-item li:before {
+    content: "•";
+    color: #d4af37;
+    position: absolute;
+    left: 0;
+  }
+
+  .cta-section {
+    background: linear-gradient(135deg, #1a1a1a 0%, #000000 100%);
+    text-align: center;
+  }
+
+  .cta-content h2 {
+    font-size: 2.5rem;
+    color: #d4af37;
+    margin-bottom: 1rem;
+  }
+
+  .cta-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #cccccc;
+  }
+
+  .cta-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+
+  .btn-primary {
+    background: #d4af37;
+    color: #000;
+  }
+
+  .btn-primary:hover {
+    background: #ff6b35;
+    transform: translateY(-2px);
+  }
+
+  .btn-secondary {
+    background: transparent;
+    color: #d4af37;
+    border: 2px solid #d4af37;
+  }
+
+  .btn-secondary:hover {
+    background: #d4af37;
+    color: #000;
+  }
+
+  @media (max-width: 768px) {
+    .page-title {
+      font-size: 2.5rem;
+    }
+    
+    .services-grid,
+    .process-steps,
+    .benefits-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .cta-buttons {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+</style>

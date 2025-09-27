@@ -1,0 +1,477 @@
+---
+import Layout from '../../components/Layout.astro';
+import { getContent } from '../../utils/content';
+
+const content = await getContent('ru');
+---
+
+<Layout title="Приключения на природе - Pravilo.Club" description="Связь с природой и приключенческие услуги на острове Ко Панган" lang="ru">
+  <main class="page-hero">
+    <div class="container">
+      <h1 class="page-title">{content.outdoor_adventures.title}</h1>
+      <p class="page-subtitle">Связь с природой и открытие скрытых сокровищ</p>
+    </div>
+  </main>
+
+  <section class="section intro-section">
+    <div class="container">
+      <div class="intro-content">
+        <h2>Почему природа важна для здоровья?</h2>
+        <p>{content.outdoor_adventures.description}</p>
+        <div class="nature-benefits">
+          <div class="benefit">
+            <h3>Лесные ванны (Shinrin-yoku)</h3>
+            <p>Японская практика погружения в атмосферу леса для снижения стресса и укрепления иммунитета</p>
+          </div>
+          <div class="benefit">
+            <h3>Геотерапия</h3>
+            <p>Прямой контакт с землей для восстановления естественного электрического баланса организма</p>
+          </div>
+          <div class="benefit">
+            <h3>Солнечная терапия</h3>
+            <p>Естественное получение витамина D и улучшение циркадных ритмов</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section adventures-section">
+    <div class="container">
+      <h2 class="section-title">Наши приключения</h2>
+      <div class="adventures-grid">
+        {content.outdoor_adventures.services.map(adventure => (
+          <div class="adventure-card">
+            <h3>{adventure.name}</h3>
+            <p class="adventure-description">{adventure.description}</p>
+            <div class="adventure-details">
+              <div class="detail">
+                <strong>Продолжительность:</strong> {adventure.duration}
+              </div>
+              <div class="detail">
+                <strong>Что включено:</strong>
+                <ul>
+                  {adventure.includes.map(item => (
+                    <li>{item}</li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+            <div class="adventure-cta">
+              <a href="/ru/contact" class="btn btn-primary">Забронировать</a>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section location-section">
+    <div class="container">
+      <h2 class="section-title">Остров Ко Панган</h2>
+      <div class="location-content">
+        <div class="location-text">
+          <h3>Уникальная природа Таиланда</h3>
+          <p>Ко Панган - это тропический рай с нетронутой природой, идеально подходящий для оздоровительных практик и приключений. Остров предлагает:</p>
+          <ul>
+            <li>Древние бамбуковые леса с целебным воздухом</li>
+            <li>Скрытые водопады и природные бассейны</li>
+            <li>Пляжи с кристально чистой водой</li>
+            <li>Горные тропы с панорамными видами</li>
+            <li>Богатую флору и фауну</li>
+          </ul>
+        </div>
+        <div class="location-features">
+          <div class="feature">
+            <h4>Климат</h4>
+            <p>Тропический климат круглый год, идеальный для активного отдыха</p>
+          </div>
+          <div class="feature">
+            <h4>Экология</h4>
+            <p>Чистый воздух, нетронутая природа, отсутствие промышленности</p>
+          </div>
+          <div class="feature">
+            <h4>Доступность</h4>
+            <p>Легко добраться с материка, развитая инфраструктура</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section benefits-section">
+    <div class="container">
+      <h2 class="section-title">Преимущества активного отдыха на природе</h2>
+      <div class="benefits-grid">
+        <div class="benefit-card">
+          <h3>Физическое здоровье</h3>
+          <ul>
+            <li>Укрепление сердечно-сосудистой системы</li>
+            <li>Улучшение координации и баланса</li>
+            <li>Повышение выносливости</li>
+            <li>Укрепление иммунитета</li>
+          </ul>
+        </div>
+        <div class="benefit-card">
+          <h3>Психическое благополучие</h3>
+          <ul>
+            <li>Снижение уровня стресса</li>
+            <li>Улучшение настроения</li>
+            <li>Повышение концентрации</li>
+            <li>Глубокое расслабление</li>
+          </ul>
+        </div>
+        <div class="benefit-card">
+          <h3>Духовное развитие</h3>
+          <ul>
+            <li>Связь с природой</li>
+            <li>Медитативные практики</li>
+            <li>Осознанность и присутствие</li>
+            <li>Внутренняя гармония</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section cta-section">
+    <div class="container">
+      <div class="cta-content">
+        <h2>Готовы к приключениям?</h2>
+        <p>Откройте для себя целительную силу природы на острове Ко Панган</p>
+        <div class="cta-buttons">
+          <a href="/ru/contact" class="btn btn-primary">Записаться на приключение</a>
+          <a href="/ru/services" class="btn btn-secondary">Посмотреть другие услуги</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .page-hero {
+    background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%);
+    color: #ffffff;
+    padding: 6rem 0 4rem;
+    text-align: center;
+  }
+
+  .page-title {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #d4af37;
+  }
+
+  .page-subtitle {
+    font-size: 1.3rem;
+    opacity: 0.9;
+  }
+
+  .section {
+    padding: 4rem 0;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+
+  .section-title {
+    font-size: 2.5rem;
+    color: #d4af37;
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  .intro-section {
+    background: #1a1a1a;
+  }
+
+  .intro-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .intro-content h2 {
+    color: #d4af37;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .intro-content p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #cccccc;
+    margin-bottom: 2rem;
+  }
+
+  .nature-benefits {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+  }
+
+  .benefit {
+    background: #000;
+    padding: 2rem;
+    border-radius: 10px;
+    border-left: 4px solid #d4af37;
+  }
+
+  .benefit h3 {
+    color: #d4af37;
+    margin-bottom: 1rem;
+  }
+
+  .benefit p {
+    color: #cccccc;
+    line-height: 1.6;
+  }
+
+  .adventures-section {
+    background: #000;
+  }
+
+  .adventures-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+  }
+
+  .adventure-card {
+    background: #1a1a1a;
+    padding: 2.5rem;
+    border-radius: 15px;
+    border: 1px solid #333;
+    transition: all 0.3s ease;
+  }
+
+  .adventure-card:hover {
+    transform: translateY(-5px);
+    border-color: #d4af37;
+    box-shadow: 0 10px 30px rgba(212, 175, 55, 0.2);
+  }
+
+  .adventure-card h3 {
+    color: #d4af37;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .adventure-description {
+    color: #cccccc;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+  }
+
+  .adventure-details {
+    margin-bottom: 2rem;
+  }
+
+  .detail {
+    margin-bottom: 1rem;
+    color: #cccccc;
+  }
+
+  .detail strong {
+    color: #d4af37;
+  }
+
+  .detail ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 0.5rem;
+  }
+
+  .detail li {
+    color: #cccccc;
+    margin-bottom: 0.3rem;
+    padding-left: 1.5rem;
+    position: relative;
+  }
+
+  .detail li:before {
+    content: "•";
+    color: #d4af37;
+    position: absolute;
+    left: 0;
+  }
+
+  .adventure-cta {
+    text-align: center;
+  }
+
+  .location-section {
+    background: #1a1a1a;
+  }
+
+  .location-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 3rem;
+    align-items: start;
+  }
+
+  .location-text h3 {
+    color: #d4af37;
+    margin-bottom: 1rem;
+  }
+
+  .location-text p {
+    color: #cccccc;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+  }
+
+  .location-text ul {
+    color: #cccccc;
+    line-height: 1.6;
+  }
+
+  .location-text li {
+    margin-bottom: 0.5rem;
+  }
+
+  .location-features {
+    display: grid;
+    gap: 1.5rem;
+  }
+
+  .feature {
+    background: #000;
+    padding: 1.5rem;
+    border-radius: 10px;
+    border-left: 4px solid #d4af37;
+  }
+
+  .feature h4 {
+    color: #d4af37;
+    margin-bottom: 0.5rem;
+  }
+
+  .feature p {
+    color: #cccccc;
+    line-height: 1.6;
+  }
+
+  .benefits-section {
+    background: #000;
+  }
+
+  .benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+
+  .benefit-card {
+    background: #1a1a1a;
+    padding: 2rem;
+    border-radius: 10px;
+    border-left: 4px solid #d4af37;
+  }
+
+  .benefit-card h3 {
+    color: #d4af37;
+    margin-bottom: 1rem;
+  }
+
+  .benefit-card ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .benefit-card li {
+    color: #cccccc;
+    margin-bottom: 0.5rem;
+    padding-left: 1.5rem;
+    position: relative;
+  }
+
+  .benefit-card li:before {
+    content: "•";
+    color: #d4af37;
+    position: absolute;
+    left: 0;
+  }
+
+  .cta-section {
+    background: linear-gradient(135deg, #1a1a1a 0%, #000000 100%);
+    text-align: center;
+  }
+
+  .cta-content h2 {
+    font-size: 2.5rem;
+    color: #d4af37;
+    margin-bottom: 1rem;
+  }
+
+  .cta-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #cccccc;
+  }
+
+  .cta-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+
+  .btn-primary {
+    background: #d4af37;
+    color: #000;
+  }
+
+  .btn-primary:hover {
+    background: #ff6b35;
+    transform: translateY(-2px);
+  }
+
+  .btn-secondary {
+    background: transparent;
+    color: #d4af37;
+    border: 2px solid #d4af37;
+  }
+
+  .btn-secondary:hover {
+    background: #d4af37;
+    color: #000;
+  }
+
+  @media (max-width: 768px) {
+    .page-title {
+      font-size: 2.5rem;
+    }
+    
+    .adventures-grid,
+    .benefits-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .location-content {
+      grid-template-columns: 1fr;
+    }
+    
+    .cta-buttons {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+</style>

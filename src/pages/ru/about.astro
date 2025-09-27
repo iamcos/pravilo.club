@@ -1,0 +1,239 @@
+---
+import Layout from '../../components/Layout.astro';
+import { getContent } from '../../utils/content';
+
+const content = await getContent('ru');
+---
+
+<Layout title="О Правиле - Pravilo.Club" description="Древняя славянская мудрость для современного здоровья" lang="ru">
+  <main class="page-hero">
+    <div class="container">
+      <h1 class="page-title">{content.what_is_pravilo.title}</h1>
+      <p class="page-subtitle">Древняя сила для современных побед</p>
+    </div>
+  </main>
+
+  <section class="section">
+    <div class="container">
+      <div class="content-block">
+        <h2>Что такое Правило?</h2>
+        <div class="text-content">
+          {content.what_is_pravilo.text.split('\n\n').map(paragraph => (
+            <p>{paragraph}</p>
+          ))}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section who-for">
+    <div class="container">
+      <div class="content-block">
+        <h2>{content.who_is_pravilo_for.title}</h2>
+        <div class="text-content">
+          <p>{content.who_is_pravilo_for.text}</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section benefits">
+    <div class="container">
+      <h2>Преимущества Правила</h2>
+      <div class="benefits-grid">
+        <div class="benefit-card">
+          <h3>Декомпрессия позвоночника</h3>
+          <p>Снятие компрессии с межпозвоночных дисков и освобождение защемленных нервов</p>
+        </div>
+        <div class="benefit-card">
+          <h3>Улучшение кровообращения</h3>
+          <p>Активация кровотока и лимфотока для лучшего питания тканей</p>
+        </div>
+        <div class="benefit-card">
+          <h3>Увеличение гибкости</h3>
+          <p>Мягкое растяжение мышц, связок и сухожилий</p>
+        </div>
+        <div class="benefit-card">
+          <h3>Снятие стресса</h3>
+          <p>Глубокое расслабление и восстановление энергетического баланса</p>
+        </div>
+        <div class="benefit-card">
+          <h3>Функциональная сила</h3>
+          <p>Развитие силы, которая пригодится в повседневной жизни</p>
+        </div>
+        <div class="benefit-card">
+          <h3>Долгосрочные результаты</h3>
+          <p>Создание прочной основы для здоровья опорно-двигательного аппарата</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section cta">
+    <div class="container">
+      <div class="cta-content">
+        <h2>Готовы попробовать?</h2>
+        <p>Зарезервируйте место на первую сессию и ощутите на себе древнюю силу Правила</p>
+        <a href="/ru/services" class="btn btn-primary">Посмотреть услуги</a>
+        <a href="/ru/contact" class="btn btn-secondary">Связаться с нами</a>
+      </div>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .page-hero {
+    background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%);
+    color: #ffffff;
+    padding: 6rem 0 4rem;
+    text-align: center;
+  }
+
+  .page-title {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #d4af37;
+  }
+
+  .page-subtitle {
+    font-size: 1.3rem;
+    opacity: 0.9;
+  }
+
+  .section {
+    padding: 4rem 0;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+
+  .content-block {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .content-block h2 {
+    font-size: 2.5rem;
+    color: #d4af37;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  .text-content {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #cccccc;
+  }
+
+  .text-content p {
+    margin-bottom: 1.5rem;
+  }
+
+  .who-for {
+    background: #1a1a1a;
+  }
+
+  .benefits {
+    background: #000;
+  }
+
+  .benefits h2 {
+    font-size: 2.5rem;
+    color: #d4af37;
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  .benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+
+  .benefit-card {
+    background: #1a1a1a;
+    padding: 2rem;
+    border-radius: 10px;
+    border-left: 4px solid #d4af37;
+    transition: transform 0.3s ease;
+  }
+
+  .benefit-card:hover {
+    transform: translateY(-5px);
+  }
+
+  .benefit-card h3 {
+    color: #d4af37;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+  }
+
+  .benefit-card p {
+    color: #cccccc;
+    line-height: 1.6;
+  }
+
+  .cta {
+    background: linear-gradient(135deg, #1a1a1a 0%, #000000 100%);
+    text-align: center;
+  }
+
+  .cta-content h2 {
+    font-size: 2.5rem;
+    color: #d4af37;
+    margin-bottom: 1rem;
+  }
+
+  .cta-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #cccccc;
+  }
+
+  .btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    margin: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+
+  .btn-primary {
+    background: #d4af37;
+    color: #000;
+  }
+
+  .btn-primary:hover {
+    background: #ff6b35;
+    transform: translateY(-2px);
+  }
+
+  .btn-secondary {
+    background: transparent;
+    color: #d4af37;
+    border: 2px solid #d4af37;
+  }
+
+  .btn-secondary:hover {
+    background: #d4af37;
+    color: #000;
+  }
+
+  @media (max-width: 768px) {
+    .page-title {
+      font-size: 2.5rem;
+    }
+    
+    .benefits-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

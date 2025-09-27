@@ -1,0 +1,466 @@
+---
+import Layout from '../../components/Layout.astro';
+import { getContent } from '../../utils/content';
+
+const content = await getContent('zh');
+---
+
+<Layout title="联系我们 - Pravilo.Club" description="联系米哈伊尔预约规则课程和健康服务" lang="zh">
+  <main class="page-hero">
+    <div class="container">
+      <h1 class="page-title">联系我们</h1>
+      <p class="page-subtitle">开始您的健康之旅</p>
+    </div>
+  </main>
+
+  <section class="section contact-section">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h2>联系方式</h2>
+          <div class="contact-methods">
+            <div class="contact-method">
+              <h3>电话</h3>
+              <p>+7 (XXX) XXX-XX-XX</p>
+              <span>可接听电话和WhatsApp</span>
+            </div>
+            
+            <div class="contact-method">
+              <h3>邮箱</h3>
+              <p>mikhail@pravilo.club</p>
+              <span>24小时内回复</span>
+            </div>
+            
+            <div class="contact-method">
+              <h3>Telegram</h3>
+              <p>@mikhail_pravilo</p>
+              <span>快速回复和更新</span>
+            </div>
+            
+            <div class="contact-method">
+              <h3>位置</h3>
+              <p>莫斯科，俄罗斯</p>
+              <span>提供面对面和在线课程</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="contact-form">
+          <h2>发送消息</h2>
+          <form class="form">
+            <div class="form-group">
+              <label for="name">姓名</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="email">邮箱</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="phone">电话（可选）</label>
+              <input type="tel" id="phone" name="phone">
+            </div>
+            
+            <div class="form-group">
+              <label for="service">服务兴趣</label>
+              <select id="service" name="service">
+                <option value="">选择服务</option>
+                <option value="pravilo-session">规则课程</option>
+                <option value="massage">按摩治疗</option>
+                <option value="adventure">冒险活动</option>
+                <option value="consultation">咨询</option>
+                <option value="other">其他</option>
+              </select>
+            </div>
+            
+            <div class="form-group">
+              <label for="message">消息</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            
+            <button type="submit" class="btn btn-primary">发送消息</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section services-section">
+    <div class="container">
+      <h2 class="section-title">可用服务</h2>
+      <div class="services-grid">
+        <div class="service-card">
+          <h3>规则课程</h3>
+          <p>使用古老规则技术的个人脊柱减压课程。</p>
+          <ul>
+            <li>个性化方法</li>
+            <li>欢迎所有技能水平</li>
+            <li>提供设备</li>
+          </ul>
+        </div>
+        
+        <div class="service-card">
+          <h3>按摩治疗</h3>
+          <p>专业按摩治疗，缓解紧张，恢复活动能力。</p>
+          <ul>
+            <li>触发点治疗</li>
+            <li>深层组织按摩</li>
+            <li>放松技巧</li>
+          </ul>
+        </div>
+        
+        <div class="service-card">
+          <h3>冒险活动</h3>
+          <p>户外冒险和活动，与自然连接，挑战自己。</p>
+          <ul>
+            <li>徒步和徒步旅行</li>
+            <li>攀岩</li>
+            <li>生存技能</li>
+          </ul>
+        </div>
+        
+        <div class="service-card">
+          <h3>咨询</h3>
+          <p>关于健康、营养和生活方式优化的个人咨询。</p>
+          <ul>
+            <li>健康评估</li>
+            <li>营养指导</li>
+            <li>生活方式建议</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section faq-section">
+    <div class="container">
+      <h2 class="section-title">常见问题</h2>
+      <div class="faq-grid">
+        <div class="faq-item">
+          <h3>如何预约课程？</h3>
+          <p>通过上述任何方式联系我。我会在24小时内回复，讨论您的需求并安排课程。</p>
+        </div>
+        
+        <div class="faq-item">
+          <h3>课程需要带什么？</h3>
+          <p>只需带舒适的衣服和开放的心态。所有设备都提供。对于户外活动，如果需要特殊装备，我会告诉您。</p>
+        </div>
+        
+        <div class="faq-item">
+          <h3>课程适合初学者吗？</h3>
+          <p>当然！我与所有经验水平的人合作。每个课程都根据您的个人需求和舒适度进行调整。</p>
+        </div>
+        
+        <div class="faq-item">
+          <h3>提供在线咨询吗？</h3>
+          <p>是的，我提供健康和生活方式指导的在线咨询。但是，规则课程和按摩治疗需要面对面会议。</p>
+        </div>
+        
+        <div class="faq-item">
+          <h3>您说什么语言？</h3>
+          <p>我说俄语、英语和一些中文。课程可以用这些语言中的任何一种进行。</p>
+        </div>
+        
+        <div class="faq-item">
+          <h3>应该提前多久预约？</h3>
+          <p>我建议至少提前一周预约，特别是周末课程。但是，我会尽量满足最后时刻的请求。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section cta-section">
+    <div class="container">
+      <div class="cta-content">
+        <h2>准备开始？</h2>
+        <p>不要等待开始您的健康和福祉之旅。今天联系我，讨论您的需求并安排您的第一次课程。</p>
+        <div class="cta-buttons">
+          <a href="tel:+7XXXXXXXXXX" class="btn btn-primary">立即致电</a>
+          <a href="mailto:mikhail@pravilo.club" class="btn btn-secondary">发送邮件</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .page-hero {
+    background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%);
+    color: #ffffff;
+    padding: 6rem 0 4rem;
+    text-align: center;
+  }
+
+  .page-title {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #d4af37;
+  }
+
+  .page-subtitle {
+    font-size: 1.3rem;
+    opacity: 0.9;
+  }
+
+  .section {
+    padding: 4rem 0;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+
+  .section-title {
+    font-size: 2.5rem;
+    color: #d4af37;
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  .contact-section {
+    background: #1a1a1a;
+  }
+
+  .contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: start;
+  }
+
+  .contact-info h2,
+  .contact-form h2 {
+    color: #d4af37;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .contact-methods {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .contact-method {
+    background: #000;
+    padding: 2rem;
+    border-radius: 10px;
+    border-left: 4px solid #d4af37;
+  }
+
+  .contact-method h3 {
+    color: #d4af37;
+    margin-bottom: 0.5rem;
+  }
+
+  .contact-method p {
+    color: #ffffff;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .contact-method span {
+    color: #cccccc;
+    font-size: 0.9rem;
+  }
+
+  .contact-form {
+    background: #000;
+    padding: 2.5rem;
+    border-radius: 15px;
+    border: 1px solid #333;
+  }
+
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+
+  .form-group label {
+    display: block;
+    color: #d4af37;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+  }
+
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background: #1a1a1a;
+    color: #ffffff;
+    font-size: 1rem;
+  }
+
+  .form-group input:focus,
+  .form-group select:focus,
+  .form-group textarea:focus {
+    outline: none;
+    border-color: #d4af37;
+  }
+
+  .services-section {
+    background: #000;
+  }
+
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+  }
+
+  .service-card {
+    background: #1a1a1a;
+    padding: 2rem;
+    border-radius: 10px;
+    border: 1px solid #333;
+    transition: all 0.3s ease;
+  }
+
+  .service-card:hover {
+    transform: translateY(-5px);
+    border-color: #d4af37;
+    box-shadow: 0 10px 30px rgba(212, 175, 55, 0.2);
+  }
+
+  .service-card h3 {
+    color: #d4af37;
+    margin-bottom: 1rem;
+  }
+
+  .service-card p {
+    color: #cccccc;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+  }
+
+  .service-card ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .service-card li {
+    color: #cccccc;
+    margin-bottom: 0.5rem;
+    padding-left: 1.5rem;
+    position: relative;
+  }
+
+  .service-card li:before {
+    content: "✓";
+    color: #d4af37;
+    position: absolute;
+    left: 0;
+  }
+
+  .faq-section {
+    background: #1a1a1a;
+  }
+
+  .faq-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+  }
+
+  .faq-item {
+    background: #000;
+    padding: 2rem;
+    border-radius: 10px;
+    border: 1px solid #333;
+  }
+
+  .faq-item h3 {
+    color: #d4af37;
+    margin-bottom: 1rem;
+  }
+
+  .faq-item p {
+    color: #cccccc;
+    line-height: 1.6;
+  }
+
+  .cta-section {
+    background: linear-gradient(135deg, #1a1a1a 0%, #000000 100%);
+    text-align: center;
+  }
+
+  .cta-content h2 {
+    font-size: 2.5rem;
+    color: #d4af37;
+    margin-bottom: 1rem;
+  }
+
+  .cta-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #cccccc;
+  }
+
+  .cta-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+
+  .btn-primary {
+    background: #d4af37;
+    color: #000;
+  }
+
+  .btn-primary:hover {
+    background: #ff6b35;
+    transform: translateY(-2px);
+  }
+
+  .btn-secondary {
+    background: transparent;
+    color: #d4af37;
+    border: 2px solid #d4af37;
+  }
+
+  .btn-secondary:hover {
+    background: #d4af37;
+    color: #000;
+  }
+
+  @media (max-width: 768px) {
+    .page-title {
+      font-size: 2.5rem;
+    }
+    
+    .contact-grid {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+    
+    .services-grid,
+    .faq-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .cta-buttons {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+</style>

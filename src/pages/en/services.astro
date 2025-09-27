@@ -1,0 +1,375 @@
+---
+import Layout from '../../components/Layout.astro';
+import { getContent } from '../../utils/content';
+
+const content = await getContent('en');
+---
+
+<Layout title="Services & Pricing - Pravilo.Club" description="Professional spinal decompression and wellness services" lang="en">
+  <main class="page-hero">
+    <div class="container">
+      <h1 class="page-title">Services & Pricing</h1>
+      <p class="page-subtitle">Professional services for your health and wellbeing</p>
+    </div>
+  </main>
+
+  <section class="section services-section">
+    <div class="container">
+      <h2 class="section-title">Pravilo Sessions</h2>
+      <div class="services-grid">
+        {content.services.map(service => (
+          <div class="service-card">
+            <h3>{service.name}</h3>
+            <p class="service-description">{service.description}</p>
+            <div class="service-includes">
+              <h4>What's included:</h4>
+              <ul>
+                {service.whats_included.map(item => (
+                  <li>{item}</li>
+                ))}
+              </ul>
+            </div>
+            <div class="service-cta">
+              <a href="/en/contact" class="btn btn-primary">{service.call_to_action}</a>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section process-section">
+    <div class="container">
+      <h2 class="section-title">How a session works</h2>
+      <div class="process-steps">
+        <div class="step">
+          <div class="step-number">1</div>
+          <h3>Consultation</h3>
+          <p>Discussion of your goals, issues, and expectations. Assessment of current health and posture.</p>
+        </div>
+        <div class="step">
+          <div class="step-number">2</div>
+          <h3>Warm-up</h3>
+          <p>Preparing the body for decompression through special exercises and breathing techniques.</p>
+        </div>
+        <div class="step">
+          <div class="step-number">3</div>
+          <h3>Decompression</h3>
+          <p>Main work on the Pravilo simulator under the guidance of an experienced instructor.</p>
+        </div>
+        <div class="step">
+          <div class="step-number">4</div>
+          <h3>Integration</h3>
+          <p>Time for recovery and discussion of sensations. Recommendations for home practice.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section benefits-section">
+    <div class="container">
+      <h2 class="section-title">Session Results</h2>
+      <div class="benefits-grid">
+        <div class="benefit-item">
+          <h3>Immediate Effects</h3>
+          <ul>
+            <li>Relief from back and neck tension</li>
+            <li>Improved posture</li>
+            <li>Increased flexibility</li>
+            <li>Deep relaxation</li>
+          </ul>
+        </div>
+        <div class="benefit-item">
+          <h3>Long-term Results</h3>
+          <ul>
+            <li>Improved circulation</li>
+            <li>Strengthened core muscles</li>
+            <li>Reduced chronic pain</li>
+            <li>Increased energy</li>
+          </ul>
+        </div>
+        <div class="benefit-item">
+          <h3>Who it's for</h3>
+          <ul>
+            <li>Office workers</li>
+            <li>Athletes</li>
+            <li>People with back issues</li>
+            <li>Anyone wanting better health</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section cta-section">
+    <div class="container">
+      <div class="cta-content">
+        <h2>Ready to begin?</h2>
+        <p>Book your first session and experience the ancient power of Pravilo</p>
+        <div class="cta-buttons">
+          <a href="/en/contact" class="btn btn-primary">Book a session</a>
+          <a href="/en/about" class="btn btn-secondary">Learn more about Pravilo</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .page-hero {
+    background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%);
+    color: #ffffff;
+    padding: 6rem 0 4rem;
+    text-align: center;
+  }
+
+  .page-title {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #d4af37;
+  }
+
+  .page-subtitle {
+    font-size: 1.3rem;
+    opacity: 0.9;
+  }
+
+  .section {
+    padding: 4rem 0;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+
+  .section-title {
+    font-size: 2.5rem;
+    color: #d4af37;
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  .services-section {
+    background: #1a1a1a;
+  }
+
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+  }
+
+  .service-card {
+    background: #000;
+    padding: 2.5rem;
+    border-radius: 15px;
+    border: 1px solid #333;
+    transition: all 0.3s ease;
+  }
+
+  .service-card:hover {
+    transform: translateY(-5px);
+    border-color: #d4af37;
+    box-shadow: 0 10px 30px rgba(212, 175, 55, 0.2);
+  }
+
+  .service-card h3 {
+    color: #d4af37;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .service-description {
+    color: #cccccc;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+  }
+
+  .service-includes {
+    margin-bottom: 2rem;
+  }
+
+  .service-includes h4 {
+    color: #d4af37;
+    margin-bottom: 0.5rem;
+  }
+
+  .service-includes ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .service-includes li {
+    color: #cccccc;
+    margin-bottom: 0.5rem;
+    padding-left: 1.5rem;
+    position: relative;
+  }
+
+  .service-includes li:before {
+    content: "✓";
+    color: #d4af37;
+    position: absolute;
+    left: 0;
+  }
+
+  .service-cta {
+    text-align: center;
+  }
+
+  .process-section {
+    background: #000;
+  }
+
+  .process-steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+  }
+
+  .step {
+    text-align: center;
+    padding: 2rem;
+  }
+
+  .step-number {
+    width: 60px;
+    height: 60px;
+    background: #d4af37;
+    color: #000;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0 auto 1rem;
+  }
+
+  .step h3 {
+    color: #d4af37;
+    margin-bottom: 1rem;
+  }
+
+  .step p {
+    color: #cccccc;
+    line-height: 1.6;
+  }
+
+  .benefits-section {
+    background: #1a1a1a;
+  }
+
+  .benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+
+  .benefit-item {
+    background: #000;
+    padding: 2rem;
+    border-radius: 10px;
+    border-left: 4px solid #d4af37;
+  }
+
+  .benefit-item h3 {
+    color: #d4af37;
+    margin-bottom: 1rem;
+  }
+
+  .benefit-item ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .benefit-item li {
+    color: #cccccc;
+    margin-bottom: 0.5rem;
+    padding-left: 1.5rem;
+    position: relative;
+  }
+
+  .benefit-item li:before {
+    content: "•";
+    color: #d4af37;
+    position: absolute;
+    left: 0;
+  }
+
+  .cta-section {
+    background: linear-gradient(135deg, #1a1a1a 0%, #000000 100%);
+    text-align: center;
+  }
+
+  .cta-content h2 {
+    font-size: 2.5rem;
+    color: #d4af37;
+    margin-bottom: 1rem;
+  }
+
+  .cta-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #cccccc;
+  }
+
+  .cta-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+
+  .btn-primary {
+    background: #d4af37;
+    color: #000;
+  }
+
+  .btn-primary:hover {
+    background: #ff6b35;
+    transform: translateY(-2px);
+  }
+
+  .btn-secondary {
+    background: transparent;
+    color: #d4af37;
+    border: 2px solid #d4af37;
+  }
+
+  .btn-secondary:hover {
+    background: #d4af37;
+    color: #000;
+  }
+
+  @media (max-width: 768px) {
+    .page-title {
+      font-size: 2.5rem;
+    }
+    
+    .services-grid,
+    .process-steps,
+    .benefits-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .cta-buttons {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+</style>

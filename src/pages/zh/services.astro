@@ -1,0 +1,375 @@
+---
+import Layout from '../../components/Layout.astro';
+import { getContent } from '../../utils/content';
+
+const content = await getContent('zh');
+---
+
+<Layout title="服务与价格 - Pravilo.Club" description="专业的脊柱减压和健康服务" lang="zh">
+  <main class="page-hero">
+    <div class="container">
+      <h1 class="page-title">服务与价格</h1>
+      <p class="page-subtitle">为您的健康和福祉提供专业服务</p>
+    </div>
+  </main>
+
+  <section class="section services-section">
+    <div class="container">
+      <h2 class="section-title">规则课程</h2>
+      <div class="services-grid">
+        {content.services.map(service => (
+          <div class="service-card">
+            <h3>{service.name}</h3>
+            <p class="service-description">{service.description}</p>
+            <div class="service-includes">
+              <h4>包含内容：</h4>
+              <ul>
+                {service.whats_included.map(item => (
+                  <li>{item}</li>
+                ))}
+              </ul>
+            </div>
+            <div class="service-cta">
+              <a href="/zh/contact" class="btn btn-primary">{service.call_to_action}</a>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section process-section">
+    <div class="container">
+      <h2 class="section-title">课程如何进行</h2>
+      <div class="process-steps">
+        <div class="step">
+          <div class="step-number">1</div>
+          <h3>咨询</h3>
+          <p>讨论您的目标、问题和期望。评估当前健康状况和姿势。</p>
+        </div>
+        <div class="step">
+          <div class="step-number">2</div>
+          <h3>热身</h3>
+          <p>通过特殊练习和呼吸技巧为身体减压做准备。</p>
+        </div>
+        <div class="step">
+          <div class="step-number">3</div>
+          <h3>减压</h3>
+          <p>在经验丰富的指导者指导下，在规则模拟器上进行主要工作。</p>
+        </div>
+        <div class="step">
+          <div class="step-number">4</div>
+          <h3>整合</h3>
+          <p>恢复时间和感觉讨论。家庭练习建议。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section benefits-section">
+    <div class="container">
+      <h2 class="section-title">课程效果</h2>
+      <div class="benefits-grid">
+        <div class="benefit-item">
+          <h3>立即效果</h3>
+          <ul>
+            <li>缓解背部和颈部紧张</li>
+            <li>改善姿势</li>
+            <li>增加灵活性</li>
+            <li>深度放松</li>
+          </ul>
+        </div>
+        <div class="benefit-item">
+          <h3>长期效果</h3>
+          <ul>
+            <li>改善血液循环</li>
+            <li>增强核心肌肉</li>
+            <li>减少慢性疼痛</li>
+            <li>提高能量水平</li>
+          </ul>
+        </div>
+        <div class="benefit-item">
+          <h3>适合人群</h3>
+          <ul>
+            <li>办公室工作者</li>
+            <li>运动员</li>
+            <li>有背部问题的人</li>
+            <li>寻求更好健康的人</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section cta-section">
+    <div class="container">
+      <div class="cta-content">
+        <h2>准备开始？</h2>
+        <p>预约您的第一次课程，体验古老规则的力量</p>
+        <div class="cta-buttons">
+          <a href="/zh/contact" class="btn btn-primary">预约课程</a>
+          <a href="/zh/about" class="btn btn-secondary">了解更多关于规则</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .page-hero {
+    background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%);
+    color: #ffffff;
+    padding: 6rem 0 4rem;
+    text-align: center;
+  }
+
+  .page-title {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #d4af37;
+  }
+
+  .page-subtitle {
+    font-size: 1.3rem;
+    opacity: 0.9;
+  }
+
+  .section {
+    padding: 4rem 0;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+
+  .section-title {
+    font-size: 2.5rem;
+    color: #d4af37;
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  .services-section {
+    background: #1a1a1a;
+  }
+
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+  }
+
+  .service-card {
+    background: #000;
+    padding: 2.5rem;
+    border-radius: 15px;
+    border: 1px solid #333;
+    transition: all 0.3s ease;
+  }
+
+  .service-card:hover {
+    transform: translateY(-5px);
+    border-color: #d4af37;
+    box-shadow: 0 10px 30px rgba(212, 175, 55, 0.2);
+  }
+
+  .service-card h3 {
+    color: #d4af37;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .service-description {
+    color: #cccccc;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+  }
+
+  .service-includes {
+    margin-bottom: 2rem;
+  }
+
+  .service-includes h4 {
+    color: #d4af37;
+    margin-bottom: 0.5rem;
+  }
+
+  .service-includes ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .service-includes li {
+    color: #cccccc;
+    margin-bottom: 0.5rem;
+    padding-left: 1.5rem;
+    position: relative;
+  }
+
+  .service-includes li:before {
+    content: "✓";
+    color: #d4af37;
+    position: absolute;
+    left: 0;
+  }
+
+  .service-cta {
+    text-align: center;
+  }
+
+  .process-section {
+    background: #000;
+  }
+
+  .process-steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+  }
+
+  .step {
+    text-align: center;
+    padding: 2rem;
+  }
+
+  .step-number {
+    width: 60px;
+    height: 60px;
+    background: #d4af37;
+    color: #000;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0 auto 1rem;
+  }
+
+  .step h3 {
+    color: #d4af37;
+    margin-bottom: 1rem;
+  }
+
+  .step p {
+    color: #cccccc;
+    line-height: 1.6;
+  }
+
+  .benefits-section {
+    background: #1a1a1a;
+  }
+
+  .benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+
+  .benefit-item {
+    background: #000;
+    padding: 2rem;
+    border-radius: 10px;
+    border-left: 4px solid #d4af37;
+  }
+
+  .benefit-item h3 {
+    color: #d4af37;
+    margin-bottom: 1rem;
+  }
+
+  .benefit-item ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .benefit-item li {
+    color: #cccccc;
+    margin-bottom: 0.5rem;
+    padding-left: 1.5rem;
+    position: relative;
+  }
+
+  .benefit-item li:before {
+    content: "•";
+    color: #d4af37;
+    position: absolute;
+    left: 0;
+  }
+
+  .cta-section {
+    background: linear-gradient(135deg, #1a1a1a 0%, #000000 100%);
+    text-align: center;
+  }
+
+  .cta-content h2 {
+    font-size: 2.5rem;
+    color: #d4af37;
+    margin-bottom: 1rem;
+  }
+
+  .cta-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #cccccc;
+  }
+
+  .cta-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+
+  .btn-primary {
+    background: #d4af37;
+    color: #000;
+  }
+
+  .btn-primary:hover {
+    background: #ff6b35;
+    transform: translateY(-2px);
+  }
+
+  .btn-secondary {
+    background: transparent;
+    color: #d4af37;
+    border: 2px solid #d4af37;
+  }
+
+  .btn-secondary:hover {
+    background: #d4af37;
+    color: #000;
+  }
+
+  @media (max-width: 768px) {
+    .page-title {
+      font-size: 2.5rem;
+    }
+    
+    .services-grid,
+    .process-steps,
+    .benefits-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .cta-buttons {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+</style>

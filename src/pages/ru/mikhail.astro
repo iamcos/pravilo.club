@@ -1,0 +1,567 @@
+---
+import Layout from '../../components/Layout.astro';
+import { getContent } from '../../utils/content';
+
+const content = await getContent('ru');
+---
+
+<Layout title="О Михаиле Бондаруке - Pravilo.Club" description="Путь мастера: от спорта к духовным практикам и созданию Правила" lang="ru">
+  <main class="page-hero">
+    <div class="container">
+      <h1 class="page-title">{content.about_misha.title}</h1>
+      <p class="page-subtitle">Путь поиска здоровья, свободы и гармонии</p>
+    </div>
+  </main>
+
+  <section class="section intro-section">
+    <div class="container">
+      <div class="intro-content">
+        <h2>Мой путь</h2>
+        <p class="intro-text">{content.about_misha.introduction}</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section journey-section">
+    <div class="container">
+      <h2 class="section-title">{content.about_misha.journey.title}</h2>
+      <div class="journey-content">
+        <div class="journey-text">
+          <p>{content.about_misha.journey.text}</p>
+        </div>
+        <div class="journey-highlights">
+          <div class="highlight">
+            <h3>Россия и СНГ</h3>
+            <p>Автостопные путешествия по южному побережью, изучение родной культуры</p>
+          </div>
+          <div class="highlight">
+            <h3>Азия</h3>
+            <p>Таиланд, Малайзия, Индонезия, Камбоджа, Вьетнам - погружение в восточные практики</p>
+          </div>
+          <div class="highlight">
+            <h3>Индия и Корея</h3>
+            <p>Долгосрочное проживание, изучение древних традиций и современных подходов</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section nutrition-section">
+    <div class="container">
+      <h2 class="section-title">{content.about_misha.nutrition_experiments.title}</h2>
+      <div class="nutrition-content">
+        <div class="nutrition-text">
+          <p>{content.about_misha.nutrition_experiments.text}</p>
+        </div>
+        <div class="nutrition-timeline">
+          <div class="timeline-item">
+            <h3>Вегетарианство</h3>
+            <p>Первые шаги в изменении питания</p>
+          </div>
+          <div class="timeline-item">
+            <h3>Веганство</h3>
+            <p>Углубление в растительное питание</p>
+          </div>
+          <div class="timeline-item">
+            <h3>Сыроедение</h3>
+            <p>8 лет практики, включая 3.5 года фрукторианства</p>
+          </div>
+          <div class="timeline-item">
+            <h3>Голодания</h3>
+            <p>Длительные голодания и очистительные практики</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section practices-section">
+    <div class="container">
+      <h2 class="section-title">{content.about_misha.current_practices.title}</h2>
+      <div class="practices-content">
+        <div class="practices-text">
+          <p>{content.about_misha.current_practices.text}</p>
+        </div>
+        <div class="practices-grid">
+          <div class="practice-card">
+            <h3>Массаж и терапия</h3>
+            <p>Снятие спазмов, работа с триггерными точками, восстановление подвижности</p>
+          </div>
+          <div class="practice-card">
+            <h3>Альфа Гравити</h3>
+            <p>Преподавание системы и создание тренажеров Правило</p>
+          </div>
+          <div class="practice-card">
+            <h3>Закаливание</h3>
+            <p>Круглогодичная практика в шортах и футболке</p>
+          </div>
+          <div class="practice-card">
+            <h3>Духовные практики</h3>
+            <p>Дыхательные техники, молитвы, практики благодарности</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section talents-section">
+    <div class="container">
+      <h2 class="section-title">{content.about_misha.other_talents.title}</h2>
+      <div class="talents-content">
+        <div class="talents-text">
+          <p>{content.about_misha.other_talents.text}</p>
+        </div>
+        <div class="talents-grid">
+          <div class="talent-card">
+            <h3>Музыка</h3>
+            <p>Игра на варгане и гармонике как способ соединения с собой и людьми</p>
+          </div>
+          <div class="talent-card">
+            <h3>Рукоделие</h3>
+            <p>Создание украшений из проволоки и кристаллов - медитативный процесс</p>
+          </div>
+          <div class="talent-card">
+            <h3>Путешествия</h3>
+            <p>Постоянная часть жизни, источник вдохновения и роста</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section philosophy-section">
+    <div class="container">
+      <h2 class="section-title">{content.about_misha.worldview_change.title}</h2>
+      <div class="philosophy-content">
+        <div class="philosophy-text">
+          <p>{content.about_misha.worldview_change.text}</p>
+        </div>
+        <div class="philosophy-principles">
+          <div class="principle">
+            <h3>Восприятие событий</h3>
+            <p>События как факты, а не только как эмоции</p>
+          </div>
+          <div class="principle">
+            <h3>Энергия эмоций</h3>
+            <p>Понимание того, что эмоции могут питать или разрушать</p>
+          </div>
+          <div class="principle">
+            <h3>Философия отношений</h3>
+            <p>Доверие и искренность как основа "колодца энергии"</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section summary-section">
+    <div class="container">
+      <h2 class="section-title">{content.about_misha.summary.title}</h2>
+      <div class="summary-content">
+        <p class="summary-text">{content.about_misha.summary.text}</p>
+        <div class="teachers">
+          <h3>Мои главные учителя:</h3>
+          <div class="teachers-list">
+            <div class="teacher">Жизнь</div>
+            <div class="teacher">Дорога</div>
+            <div class="teacher">Люди</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section cta-section">
+    <div class="container">
+      <div class="cta-content">
+        <h2>Готовы начать свой путь?</h2>
+        <p>Позвольте Михаилу стать вашим проводником в мир здоровья и гармонии</p>
+        <div class="cta-buttons">
+          <a href="/ru/services" class="btn btn-primary">Записаться на сессию</a>
+          <a href="/ru/contact" class="btn btn-secondary">Связаться с нами</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .page-hero {
+    background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%);
+    color: #ffffff;
+    padding: 6rem 0 4rem;
+    text-align: center;
+  }
+
+  .page-title {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #d4af37;
+  }
+
+  .page-subtitle {
+    font-size: 1.3rem;
+    opacity: 0.9;
+  }
+
+  .section {
+    padding: 4rem 0;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+
+  .section-title {
+    font-size: 2.5rem;
+    color: #d4af37;
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  .intro-section {
+    background: #1a1a1a;
+  }
+
+  .intro-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .intro-content h2 {
+    color: #d4af37;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .intro-text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #cccccc;
+  }
+
+  .journey-section {
+    background: #000;
+  }
+
+  .journey-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 3rem;
+    align-items: start;
+  }
+
+  .journey-text p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #cccccc;
+  }
+
+  .journey-highlights {
+    display: grid;
+    gap: 1.5rem;
+  }
+
+  .highlight {
+    background: #1a1a1a;
+    padding: 1.5rem;
+    border-radius: 10px;
+    border-left: 4px solid #d4af37;
+  }
+
+  .highlight h3 {
+    color: #d4af37;
+    margin-bottom: 0.5rem;
+  }
+
+  .highlight p {
+    color: #cccccc;
+    line-height: 1.6;
+  }
+
+  .nutrition-section {
+    background: #1a1a1a;
+  }
+
+  .nutrition-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 3rem;
+    align-items: start;
+  }
+
+  .nutrition-text p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #cccccc;
+  }
+
+  .nutrition-timeline {
+    display: grid;
+    gap: 1rem;
+  }
+
+  .timeline-item {
+    background: #000;
+    padding: 1.5rem;
+    border-radius: 10px;
+    border-left: 4px solid #d4af37;
+  }
+
+  .timeline-item h3 {
+    color: #d4af37;
+    margin-bottom: 0.5rem;
+  }
+
+  .timeline-item p {
+    color: #cccccc;
+    line-height: 1.6;
+  }
+
+  .practices-section {
+    background: #000;
+  }
+
+  .practices-content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 3rem;
+    align-items: start;
+  }
+
+  .practices-text p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #cccccc;
+  }
+
+  .practices-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .practice-card {
+    background: #1a1a1a;
+    padding: 1.5rem;
+    border-radius: 10px;
+    border-left: 4px solid #d4af37;
+  }
+
+  .practice-card h3 {
+    color: #d4af37;
+    margin-bottom: 0.5rem;
+  }
+
+  .practice-card p {
+    color: #cccccc;
+    line-height: 1.6;
+  }
+
+  .talents-section {
+    background: #1a1a1a;
+  }
+
+  .talents-content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 3rem;
+    align-items: start;
+  }
+
+  .talents-text p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #cccccc;
+  }
+
+  .talents-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .talent-card {
+    background: #000;
+    padding: 1.5rem;
+    border-radius: 10px;
+    border-left: 4px solid #d4af37;
+  }
+
+  .talent-card h3 {
+    color: #d4af37;
+    margin-bottom: 0.5rem;
+  }
+
+  .talent-card p {
+    color: #cccccc;
+    line-height: 1.6;
+  }
+
+  .philosophy-section {
+    background: #000;
+  }
+
+  .philosophy-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 3rem;
+    align-items: start;
+  }
+
+  .philosophy-text p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #cccccc;
+  }
+
+  .philosophy-principles {
+    display: grid;
+    gap: 1.5rem;
+  }
+
+  .principle {
+    background: #1a1a1a;
+    padding: 1.5rem;
+    border-radius: 10px;
+    border-left: 4px solid #d4af37;
+  }
+
+  .principle h3 {
+    color: #d4af37;
+    margin-bottom: 0.5rem;
+  }
+
+  .principle p {
+    color: #cccccc;
+    line-height: 1.6;
+  }
+
+  .summary-section {
+    background: #1a1a1a;
+    text-align: center;
+  }
+
+  .summary-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .summary-text {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #cccccc;
+    margin-bottom: 2rem;
+  }
+
+  .teachers h3 {
+    color: #d4af37;
+    margin-bottom: 1rem;
+  }
+
+  .teachers-list {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+
+  .teacher {
+    background: #000;
+    color: #d4af37;
+    padding: 1rem 2rem;
+    border-radius: 25px;
+    border: 2px solid #d4af37;
+    font-weight: bold;
+  }
+
+  .cta-section {
+    background: linear-gradient(135deg, #1a1a1a 0%, #000000 100%);
+    text-align: center;
+  }
+
+  .cta-content h2 {
+    font-size: 2.5rem;
+    color: #d4af37;
+    margin-bottom: 1rem;
+  }
+
+  .cta-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #cccccc;
+  }
+
+  .cta-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+
+  .btn-primary {
+    background: #d4af37;
+    color: #000;
+  }
+
+  .btn-primary:hover {
+    background: #ff6b35;
+    transform: translateY(-2px);
+  }
+
+  .btn-secondary {
+    background: transparent;
+    color: #d4af37;
+    border: 2px solid #d4af37;
+  }
+
+  .btn-secondary:hover {
+    background: #d4af37;
+    color: #000;
+  }
+
+  @media (max-width: 768px) {
+    .page-title {
+      font-size: 2.5rem;
+    }
+    
+    .journey-content,
+    .nutrition-content,
+    .practices-content,
+    .talents-content,
+    .philosophy-content {
+      grid-template-columns: 1fr;
+    }
+    
+    .practices-grid,
+    .talents-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .teachers-list {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .cta-buttons {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+</style>
