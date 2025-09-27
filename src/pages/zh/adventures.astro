@@ -1,0 +1,366 @@
+---
+import Layout from '../../components/Layout.astro';
+import { getContent } from '../../utils/content';
+
+const content = await getContent('zh');
+---
+
+<Layout title="户外冒险 - Pravilo.Club" description="与米哈伊尔一起体验冒险活动和户外体验" lang="zh">
+  <main class="page-hero">
+    <div class="container">
+      <h1 class="page-title">户外冒险</h1>
+      <p class="page-subtitle">与米哈伊尔一起体验自然和冒险</p>
+    </div>
+  </main>
+
+  <section class="section adventures-section">
+    <div class="container">
+      <h2 class="section-title">冒险活动</h2>
+      <div class="adventures-grid">
+        <div class="adventure-card">
+          <h3>徒步和徒步旅行</h3>
+          <p>与经验丰富的向导一起探索美丽的步道和山脉。发现隐藏的宝石，享受令人叹为观止的景色。</p>
+          <ul>
+            <li>山地步道</li>
+            <li>森林漫步</li>
+            <li>日落徒步</li>
+            <li>摄影机会</li>
+          </ul>
+        </div>
+        
+        <div class="adventure-card">
+          <h3>攀岩</h3>
+          <p>通过攀岩冒险挑战自己。适合所有水平，从初学者到高级攀岩者。</p>
+          <ul>
+            <li>初学者友好路线</li>
+            <li>提供安全设备</li>
+            <li>技术指导</li>
+            <li>美丽的攀岩地点</li>
+          </ul>
+        </div>
+        
+        <div class="adventure-card">
+          <h3>水上活动</h3>
+          <p>享受基于水的冒险，包括游泳、皮划艇和海滩活动。</p>
+          <ul>
+            <li>在天然泳池游泳</li>
+            <li>皮划艇冒险</li>
+            <li>海滩活动</li>
+            <li>水上安全培训</li>
+          </ul>
+        </div>
+        
+        <div class="adventure-card">
+          <h3>露营和生存</h3>
+          <p>学习基本生存技能，享受在大自然中的过夜露营体验。</p>
+          <ul>
+            <li>生存技能培训</li>
+            <li>生火技巧</li>
+            <li>搭建庇护所</li>
+            <li>与自然连接</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section philosophy-section">
+    <div class="container">
+      <h2 class="section-title">冒险哲学</h2>
+      <div class="philosophy-content">
+        <div class="philosophy-text">
+          <p>冒险不仅仅是身体挑战——它是与自然连接、突破界限、发现内在力量的机会。每次冒险都是成长和自我发现的机遇。</p>
+          <p>米哈伊尔的方法将身体冒险与正念和精神连接相结合。通过户外活动，你不仅会挑战身体，还会发展心理韧性和对自然的更深欣赏。</p>
+        </div>
+        <div class="philosophy-features">
+          <div class="feature">
+            <h4>正念冒险</h4>
+            <p>每项活动都以正念和对自然的尊重进行</p>
+          </div>
+          <div class="feature">
+            <h4>个人成长</h4>
+            <p>旨在帮助您发现潜力的挑战</p>
+          </div>
+          <div class="feature">
+            <h4>自然连接</h4>
+            <p>深化您与自然世界的关系</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section experience-section">
+    <div class="container">
+      <h2 class="section-title">期待什么</h2>
+      <div class="experience-grid">
+        <div class="experience-item">
+          <h3>安全第一</h3>
+          <p>所有活动都以最高安全标准进行。设备提供并定期维护。</p>
+        </div>
+        <div class="experience-item">
+          <h3>所有技能水平</h3>
+          <p>冒险根据您的经验水平调整。欢迎初学者并提供适当指导。</p>
+        </div>
+        <div class="experience-item">
+          <h3>小团体</h3>
+          <p>限制团体规模确保个性化关注和更亲密的体验。</p>
+        </div>
+        <div class="experience-item">
+          <h3>提供设备</h3>
+          <p>提供所有必要设备。只需带上您的冒险精神！</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section cta-section">
+    <div class="container">
+      <div class="cta-content">
+        <h2>准备冒险？</h2>
+        <p>与米哈伊尔一起参加难忘的户外体验，挑战、激励和改变您。</p>
+        <div class="cta-buttons">
+          <a href="/zh/contact" class="btn btn-primary">预约冒险</a>
+          <a href="/zh/about" class="btn btn-secondary">了解更多</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .page-hero {
+    background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%);
+    color: #ffffff;
+    padding: 6rem 0 4rem;
+    text-align: center;
+  }
+
+  .page-title {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #d4af37;
+  }
+
+  .page-subtitle {
+    font-size: 1.3rem;
+    opacity: 0.9;
+  }
+
+  .section {
+    padding: 4rem 0;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+
+  .section-title {
+    font-size: 2.5rem;
+    color: #d4af37;
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  .adventures-section {
+    background: #1a1a1a;
+  }
+
+  .adventures-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+
+  .adventure-card {
+    background: #000;
+    padding: 2.5rem;
+    border-radius: 15px;
+    border: 1px solid #333;
+    transition: all 0.3s ease;
+  }
+
+  .adventure-card:hover {
+    transform: translateY(-5px);
+    border-color: #d4af37;
+    box-shadow: 0 10px 30px rgba(212, 175, 55, 0.2);
+  }
+
+  .adventure-card h3 {
+    color: #d4af37;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .adventure-card p {
+    color: #cccccc;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+  }
+
+  .adventure-card ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .adventure-card li {
+    color: #cccccc;
+    margin-bottom: 0.5rem;
+    padding-left: 1.5rem;
+    position: relative;
+  }
+
+  .adventure-card li:before {
+    content: "✓";
+    color: #d4af37;
+    position: absolute;
+    left: 0;
+  }
+
+  .philosophy-section {
+    background: #000;
+  }
+
+  .philosophy-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: start;
+  }
+
+  .philosophy-text p {
+    color: #cccccc;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+  }
+
+  .philosophy-features {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .feature {
+    background: #1a1a1a;
+    padding: 1.5rem;
+    border-radius: 10px;
+    border-left: 4px solid #d4af37;
+  }
+
+  .feature h4 {
+    color: #d4af37;
+    margin-bottom: 0.5rem;
+  }
+
+  .feature p {
+    color: #cccccc;
+    line-height: 1.6;
+  }
+
+  .experience-section {
+    background: #1a1a1a;
+  }
+
+  .experience-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+  }
+
+  .experience-item {
+    text-align: center;
+    padding: 2rem;
+  }
+
+  .experience-item h3 {
+    color: #d4af37;
+    margin-bottom: 1rem;
+  }
+
+  .experience-item p {
+    color: #cccccc;
+    line-height: 1.6;
+  }
+
+  .cta-section {
+    background: linear-gradient(135deg, #1a1a1a 0%, #000000 100%);
+    text-align: center;
+  }
+
+  .cta-content h2 {
+    font-size: 2.5rem;
+    color: #d4af37;
+    margin-bottom: 1rem;
+  }
+
+  .cta-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #cccccc;
+  }
+
+  .cta-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+
+  .btn-primary {
+    background: #d4af37;
+    color: #000;
+  }
+
+  .btn-primary:hover {
+    background: #ff6b35;
+    transform: translateY(-2px);
+  }
+
+  .btn-secondary {
+    background: transparent;
+    color: #d4af37;
+    border: 2px solid #d4af37;
+  }
+
+  .btn-secondary:hover {
+    background: #d4af37;
+    color: #000;
+  }
+
+  @media (max-width: 768px) {
+    .page-title {
+      font-size: 2.5rem;
+    }
+    
+    .adventures-grid,
+    .experience-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .philosophy-content {
+      grid-template-columns: 1fr;
+    }
+    
+    .cta-buttons {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+</style>
+
+

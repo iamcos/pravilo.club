@@ -42,12 +42,12 @@ const { title, description, lang } = Astro.props;
         <span></span>
       </button>
       <div class="nav-menu" id="nav-menu">
-        <a href={`/${lang}/`} class="nav-link">Главная</a>
-        <a href={`/${lang}/about`} class="nav-link">О Правиле</a>
-        <a href={`/${lang}/services`} class="nav-link">Услуги</a>
-        <a href={`/${lang}/adventures`} class="nav-link">Приключения</a>
-        <a href={`/${lang}/mikhail`} class="nav-link">О Михаиле</a>
-        <a href={`/${lang}/contact`} class="nav-link">Контакты</a>
+        <a href={`/${lang}/`} class="nav-link">{lang === 'ru' ? 'Главная' : lang === 'en' ? 'Home' : '首页'}</a>
+        <a href={`/${lang}/about`} class="nav-link">{lang === 'ru' ? 'О Правиле' : lang === 'en' ? 'About Pravilo' : '关于规则'}</a>
+        <a href={`/${lang}/services`} class="nav-link">{lang === 'ru' ? 'Услуги' : lang === 'en' ? 'Services' : '服务'}</a>
+        <a href={`/${lang}/adventures`} class="nav-link">{lang === 'ru' ? 'Приключения' : lang === 'en' ? 'Adventures' : '冒险'}</a>
+        <a href={`/${lang}/mikhail`} class="nav-link">{lang === 'ru' ? 'О Михаиле' : lang === 'en' ? 'About Mikhail' : '关于米哈伊尔'}</a>
+        <a href={`/${lang}/contact`} class="nav-link">{lang === 'ru' ? 'Контакты' : lang === 'en' ? 'Contact' : '联系我们'}</a>
         <div class="language-switcher">
           <a href="/ru/" class="nav-link">Русский</a>
           <a href="/en/" class="nav-link">English</a>
