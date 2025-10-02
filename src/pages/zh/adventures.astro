@@ -126,6 +126,29 @@ const content = await getContent('zh');
       </div>
     </div>
   </section>
+
+  <section class="section recommended-section">
+    <div class="container">
+      <h2 class="section-title">推荐阅读</h2>
+      <div class="recommended-grid">
+        <div class="recommended-card">
+          <h3>规则课程</h3>
+          <p>脊柱减压如何增强自然疗愈效果</p>
+          <a href="/zh/services" class="btn btn-secondary">查看服务</a>
+        </div>
+        <div class="recommended-card">
+          <h3>全部综合项目</h3>
+          <p>按类别与形式浏览完整目录</p>
+          <a href="/zh/offerings" class="btn btn-secondary">打开目录</a>
+        </div>
+        <div class="recommended-card">
+          <h3>联系方式</h3>
+          <p>提出问题并选择合适的路线</p>
+          <a href="/zh/contact" class="btn btn-secondary">联系我们</a>
+        </div>
+      </div>
+    </div>
+  </section>
 </Layout>
 
 <style>
@@ -340,6 +363,35 @@ const content = await getContent('zh');
   .btn-secondary:hover {
     background: #d4af37;
     color: #000;
+  }
+
+  .recommended-section {
+    background: #000;
+  }
+
+  .recommended-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+
+  .recommended-card {
+    background: #1a1a1a;
+    padding: 2rem;
+    border-radius: 10px;
+    border-left: 4px solid #d4af37;
+    text-align: center;
+  }
+
+  .recommended-card h3 {
+    color: #d4af37;
+    margin-bottom: 1rem;
+  }
+
+  .recommended-card p {
+    color: #cccccc;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
   }
 
   @media (max-width: 768px) {

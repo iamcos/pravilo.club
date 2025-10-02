@@ -126,6 +126,29 @@ const content = await getContent('en');
       </div>
     </div>
   </section>
+
+  <section class="section recommended-section">
+    <div class="container">
+      <h2 class="section-title">Recommended Reading</h2>
+      <div class="recommended-grid">
+        <div class="recommended-card">
+          <h3>Pravilo Sessions</h3>
+          <p>How spinal decompression amplifies nature's effect</p>
+          <a href="/en/services" class="btn btn-secondary">View services</a>
+        </div>
+        <div class="recommended-card">
+          <h3>All Offerings</h3>
+          <p>Browse the full catalog by category and format</p>
+          <a href="/en/offerings" class="btn btn-secondary">Open catalog</a>
+        </div>
+        <div class="recommended-card">
+          <h3>Contact</h3>
+          <p>Ask questions and choose the right route</p>
+          <a href="/en/contact" class="btn btn-secondary">Get in touch</a>
+        </div>
+      </div>
+    </div>
+  </section>
 </Layout>
 
 <style>
@@ -340,6 +363,35 @@ const content = await getContent('en');
   .btn-secondary:hover {
     background: #d4af37;
     color: #000;
+  }
+
+  .recommended-section {
+    background: #000;
+  }
+
+  .recommended-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+
+  .recommended-card {
+    background: #1a1a1a;
+    padding: 2rem;
+    border-radius: 10px;
+    border-left: 4px solid #d4af37;
+    text-align: center;
+  }
+
+  .recommended-card h3 {
+    color: #d4af37;
+    margin-bottom: 1rem;
+  }
+
+  .recommended-card p {
+    color: #cccccc;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
   }
 
   @media (max-width: 768px) {

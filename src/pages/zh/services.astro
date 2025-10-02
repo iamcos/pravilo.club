@@ -113,6 +113,29 @@ const content = await getContent('zh');
       </div>
     </div>
   </section>
+
+  <section class="section recommended-section">
+    <div class="container">
+      <h2 class="section-title">推荐阅读</h2>
+      <div class="recommended-grid">
+        <div class="recommended-card">
+          <h3>什么是规则（Pravilo）？</h3>
+          <p>了解更多这项古老的斯拉夫脊柱减压实践</p>
+          <a href="/zh/about" class="btn btn-secondary">阅读</a>
+        </div>
+        <div class="recommended-card">
+          <h3>户外冒险</h3>
+          <p>用自然体验来补充您的规则课程</p>
+          <a href="/zh/adventures" class="btn btn-secondary">查看</a>
+        </div>
+        <div class="recommended-card">
+          <h3>全部综合项目</h3>
+          <p>我们的项目与实践完整目录</p>
+          <a href="/zh/offerings" class="btn btn-secondary">查看全部</a>
+        </div>
+      </div>
+    </div>
+  </section>
 </Layout>
 
 <style>
@@ -322,6 +345,35 @@ const content = await getContent('zh');
     gap: 1rem;
     justify-content: center;
     flex-wrap: wrap;
+  }
+
+  .recommended-section {
+    background: #000;
+  }
+
+  .recommended-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+
+  .recommended-card {
+    background: #1a1a1a;
+    padding: 2rem;
+    border-radius: 10px;
+    border-left: 4px solid #d4af37;
+    text-align: center;
+  }
+
+  .recommended-card h3 {
+    color: #d4af37;
+    margin-bottom: 1rem;
+  }
+
+  .recommended-card p {
+    color: #cccccc;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
   }
 
   .btn {

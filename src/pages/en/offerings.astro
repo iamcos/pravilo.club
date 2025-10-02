@@ -1,0 +1,106 @@
+---
+import Layout from '../../components/Layout.astro';
+import { getContent } from '../../utils/content';
+
+interface OfferingItem { name: string }
+interface OfferingGroup { name: string; items: OfferingItem[] }
+interface OfferingCategory { name: string; slug: string; groups: OfferingGroup[] }
+interface CombinedOfferings { title: string; description: string; categories: OfferingCategory[] }
+
+const content = await getContent('en');
+const combined = content.combined_offerings as CombinedOfferings;
+const categories: OfferingCategory[] = combined.categories;
+
+const renderItem = (item: OfferingItem) => {
+  return `<li class="item">${item.name}</li>`;
+};
+
+const renderGroup = (group: OfferingGroup) => {
+  return `
+    <div class="group">
+      <h3 class="group-title">${group.name}</h3>
+      <ul class="items">
+        ${group.items.map(renderItem).join('')}
+      </ul>
+    </div>
+  `;
+};
+
+const renderCategory = (category: OfferingCategory) => {
+  return `
+    <section class="category">
+      <h2 class="category-title">${category.name}</h2>
+      <div class="groups">
+        ${category.groups.map(renderGroup).join('')}
+      </div>
+    </section>
+  `;
+};
+---
+
+<Layout title="Offerings - Pravilo.Club" description="Unified section of services, practices, crafts, and expeditions" lang="en">
+  <script type="application/ld+json">{JSON.stringify({
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    'itemListElement': categories.map((c, idx) => ({
+      '@type': 'ListItem', position: idx + 1, name: c.name, url: `https://pravilo.club/en/offerings#${c.slug}`
+    }))
+  })}</script>
+  <main class="page-hero">
+    <div class="container">
+      <h1 class="page-title">{combined.title}</h1>
+      <p class="page-subtitle">{combined.description}</p>
+    </div>
+  </main>
+
+  <section class="section categories">
+    <div class="container">
+      <div class="categories-grid" set:html={categories.map(renderCategory).join('')}>
+      </div>
+    </div>
+  </section>
+
+  <section class="section cta">
+    <div class="container">
+      <div class="cta-card">
+        <h2>Ready to choose?</h2>
+        <p>Contact us to match a program to your goals and level.</p>
+        <div class="cta-buttons">
+          <a href="/en/contact" class="btn btn-primary">Contact</a>
+          <a href="/en/services" class="btn btn-secondary">Pravilo Sessions</a>
+          <a href="/en/adventures" class="btn btn-secondary">Nature Adventures</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .page-hero { background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%); color: #ffffff; padding: 6rem 0 4rem; text-align: center; }
+  .page-title { font-size: 3.0rem; font-weight: bold; margin-bottom: 1rem; color: #d4af37; }
+  .page-subtitle { font-size: 1.1rem; opacity: 0.9; max-width: 900px; margin: 0 auto; }
+  .section { padding: 4rem 0; }
+  .container { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
+  .categories { background: #000; }
+  .categories-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem; }
+  .category { background: #1a1a1a; border: 1px solid #333; border-radius: 14px; padding: 1.5rem; }
+  .category-title { color: #d4af37; font-size: 1.6rem; margin-bottom: 1rem; }
+  .groups { display: grid; gap: 1.2rem; }
+  .group-title { color: #d4af37; font-size: 1.1rem; margin-bottom: 0.4rem; }
+  .items { list-style: none; padding: 0; margin: 0; }
+  .item { color: #ccc; padding-left: 1.2rem; position: relative; margin: 0.3rem 0; }
+  .item:before { content: "•"; color: #d4af37; position: absolute; left: 0; }
+  .cta { background: #1a1a1a; text-align: center; }
+  .cta-card { background: #000; border: 1px solid #333; border-radius: 14px; padding: 2rem; }
+  .cta-card h2 { color: #d4af37; margin-bottom: 0.6rem; }
+  .cta-card p { color: #cccccc; margin-bottom: 1.2rem; }
+  .cta-buttons { display: flex; gap: 0.8rem; justify-content: center; flex-wrap: wrap; }
+  .btn { display: inline-block; padding: 0.9rem 1.4rem; border: none; border-radius: 6px; text-decoration: none; font-weight: bold; transition: all 0.3s ease; cursor: pointer; }
+  .btn-primary { background: #d4af37; color: #000; }
+  .btn-primary:hover { background: #ff6b35; transform: translateY(-2px); }
+  .btn-secondary { background: transparent; color: #d4af37; border: 2px solid #d4af37; }
+  .btn-secondary:hover { background: #d4af37; color: #000; }
+  @media (max-width: 768px) { .page-title { font-size: 2.2rem; } .categories-grid { grid-template-columns: 1fr; } .cta-buttons { flex-direction: column; align-items: center; } }
+</style>
+
+

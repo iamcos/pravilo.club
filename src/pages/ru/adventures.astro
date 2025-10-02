@@ -146,6 +146,29 @@ const content = await getContent('ru');
       </div>
     </div>
   </section>
+
+  <section class="section recommended-section">
+    <div class="container">
+      <h2 class="section-title">Рекомендуемые материалы</h2>
+      <div class="recommended-grid">
+        <div class="recommended-card">
+          <h3>Сессии ПравИло</h3>
+          <p>Как декомпрессия позвоночника усиливает эффект от природы</p>
+          <a href="/ru/services" class="btn btn-secondary">К услугам</a>
+        </div>
+        <div class="recommended-card">
+          <h3>Все услуги и приключения</h3>
+          <p>Полный каталог по направлениям и форматам</p>
+          <a href="/ru/offerings" class="btn btn-secondary">Каталог</a>
+        </div>
+        <div class="recommended-card">
+          <h3>Контакты</h3>
+          <p>Задайте вопросы и подберите маршрут</p>
+          <a href="/ru/contact" class="btn btn-secondary">Связаться</a>
+        </div>
+      </div>
+    </div>
+  </section>
 </Layout>
 
 <style>
@@ -453,6 +476,35 @@ const content = await getContent('ru');
   .btn-secondary:hover {
     background: #d4af37;
     color: #000;
+  }
+
+  .recommended-section {
+    background: #000;
+  }
+
+  .recommended-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+
+  .recommended-card {
+    background: #1a1a1a;
+    padding: 2rem;
+    border-radius: 10px;
+    border-left: 4px solid #d4af37;
+    text-align: center;
+  }
+
+  .recommended-card h3 {
+    color: #d4af37;
+    margin-bottom: 1rem;
+  }
+
+  .recommended-card p {
+    color: #cccccc;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
   }
 
   @media (max-width: 768px) {

@@ -1,0 +1,56 @@
+# Environment files
+.env
+.env.local
+.env.production
+
+# Session files (Telegram authentication)
+session_name*.session
+*.session
+*.session-journal
+
+# Telegram channel media (large files)
+context/telegram_channel/media/
+context/telegram_channel/json/
+context/telegram_channel/text/
+context/
+
+# Build outputs
+dist/
+.astro/
+
+# Dependencies
+node_modules/
+
+# OS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directory used by tools like istanbul
+coverage/
+
+# Temporary folders
+tmp/
+temp/

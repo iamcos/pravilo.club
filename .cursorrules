@@ -1,39 +1,35 @@
-# Development Rules for Pravilo.Club
+# Cursor Rules for Pravilo.Club
 
-## Communication Guidelines
-- No marketing language or fluff
-- Don't overstate capabilities
-- Be direct and technical
-- Don't hide inability to solve problems
-- Analyze every error from output logs
-- Don't make assumptions about requirements
+# Communication
+- Be direct and technical. No fluff or marketing.
+- Analyze errors from logs verbatim; propose minimal, targeted fixes.
 
-## Design Principles
-- Keep it simple - this is a basic website
-- No unnecessary animations, particles, or effects
-- No background videos or complex visuals
-- Focus on functionality over decoration
-- Don't complicate existing working code
-- Maintain current color scheme (black/gold)
+# Environment
+- OS: macOS (darwin 24.5.0)
+- Shell: zsh/bash
+- Python: 3.11 virtualenv at `context/telegram_channel/.venv`
+- Root .env: `/Users/georgiigavrilenko/Documents/GitHub/pravilo.club/.env`
+- Telegram session file (authoritative): `/Users/georgiigavrilenko/Documents/GitHub/pravilo.club/session_name_fresh.session`
+- Never request Telegram re-auth; always use the session file above.
 
-## Code Standards
-- Don't delete context or important files
-- Review entire project before making changes
-- Clean up generated files that aren't needed
-- Keep existing working functionality
-- Don't add features that weren't requested
-- Fix actual problems, don't add unnecessary complexity
+# Secrets & Files
+- Keep `.env` and `session_name*.session` out of git.
+- Do not move or rename the session file unless explicitly asked.
 
-## File Management
-- Review every file before deletion
-- Keep all content and context files
-- Remove only clearly unnecessary generated files
-- Don't touch working configuration files
-- Preserve all source content
+# Telegram Extractor
+- Scripts live in `context/telegram_channel/`.
+- Use `telegram_extractor.py` as the primary extractor.
+- Concurrency via env `MAX_CONCURRENT_DOWNLOADS` (default 10). Respect DC switches.
+- For a clean sweep, set `FULL_REDOWNLOAD=1`.
 
-## Problem Solving
-- Identify specific technical issues
-- Fix actual problems, not perceived ones
-- Don't add features without request
-- Keep solutions simple and direct
-- Test changes before committing
+# Project Design
+- Keep site simple; maintain black/gold scheme.
+- No new visual effects or background videos.
+
+# Deletions
+- Do not delete config or content without explicit request.
+- Before removing markdowns, confirm with the user.
+
+# Assumptions
+- Everything required for Telegram access is present locally.
+- If something fails, it’s a code/config bug—fix it; do not ask for re-auth.

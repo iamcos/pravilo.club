@@ -113,6 +113,29 @@ const content = await getContent('ru');
       </div>
     </div>
   </section>
+
+  <section class="section recommended-section">
+    <div class="container">
+      <h2 class="section-title">Рекомендуемые статьи</h2>
+      <div class="recommended-grid">
+        <div class="recommended-card">
+          <h3>Что такое Правило?</h3>
+          <p>Узнайте больше о древней славянской практике декомпрессии позвоночника</p>
+          <a href="/ru/about" class="btn btn-secondary">Читать</a>
+        </div>
+        <div class="recommended-card">
+          <h3>Приключения на природе</h3>
+          <p>Дополните сессии Правила активным отдыхом на природе</p>
+          <a href="/ru/adventures" class="btn btn-secondary">Узнать больше</a>
+        </div>
+        <div class="recommended-card">
+          <h3>Все услуги и приключения</h3>
+          <p>Полный каталог наших программ и практик</p>
+          <a href="/ru/offerings" class="btn btn-secondary">Смотреть все</a>
+        </div>
+      </div>
+    </div>
+  </section>
 </Layout>
 
 <style>
@@ -322,6 +345,35 @@ const content = await getContent('ru');
     gap: 1rem;
     justify-content: center;
     flex-wrap: wrap;
+  }
+
+  .recommended-section {
+    background: #000;
+  }
+
+  .recommended-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+
+  .recommended-card {
+    background: #1a1a1a;
+    padding: 2rem;
+    border-radius: 10px;
+    border-left: 4px solid #d4af37;
+    text-align: center;
+  }
+
+  .recommended-card h3 {
+    color: #d4af37;
+    margin-bottom: 1rem;
+  }
+
+  .recommended-card p {
+    color: #cccccc;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
   }
 
   .btn {

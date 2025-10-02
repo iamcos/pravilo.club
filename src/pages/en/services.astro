@@ -113,6 +113,29 @@ const content = await getContent('en');
       </div>
     </div>
   </section>
+
+  <section class="section recommended-section">
+    <div class="container">
+      <h2 class="section-title">Recommended Reading</h2>
+      <div class="recommended-grid">
+        <div class="recommended-card">
+          <h3>What is Pravilo?</h3>
+          <p>Learn more about the ancient Slavic spinal decompression practice</p>
+          <a href="/en/about" class="btn btn-secondary">Read</a>
+        </div>
+        <div class="recommended-card">
+          <h3>Outdoor Adventures</h3>
+          <p>Complement your Pravilo sessions with nature-based activities</p>
+          <a href="/en/adventures" class="btn btn-secondary">Explore</a>
+        </div>
+        <div class="recommended-card">
+          <h3>All Offerings</h3>
+          <p>Full catalog of our programs and practices</p>
+          <a href="/en/offerings" class="btn btn-secondary">View all</a>
+        </div>
+      </div>
+    </div>
+  </section>
 </Layout>
 
 <style>
@@ -322,6 +345,35 @@ const content = await getContent('en');
     gap: 1rem;
     justify-content: center;
     flex-wrap: wrap;
+  }
+
+  .recommended-section {
+    background: #000;
+  }
+
+  .recommended-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+
+  .recommended-card {
+    background: #1a1a1a;
+    padding: 2rem;
+    border-radius: 10px;
+    border-left: 4px solid #d4af37;
+    text-align: center;
+  }
+
+  .recommended-card h3 {
+    color: #d4af37;
+    margin-bottom: 1rem;
+  }
+
+  .recommended-card p {
+    color: #cccccc;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
   }
 
   .btn {

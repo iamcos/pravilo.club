@@ -249,4 +249,140 @@
       "Русский"
     ]
   }
+  ,
+  "combined_offerings": {
+    "title": "Offerings",
+    "description": "A unified section combining therapeutic services, hikes and expeditions, spiritual practices, crafts, educational programs, and specialized programs. Adapted to your level and goals, grounded in nature, traditional knowledge, and practical benefit.",
+    "categories": [
+      {
+        "name": "Hikes & Expeditions",
+        "slug": "adventures",
+        "groups": [
+          {
+            "name": "Day Hikes (4–6 hours)",
+            "items": [
+              {"name": "Waterfall Hikes"},
+              {"name": "Mountain Ascents"},
+              {"name": "Bamboo Forest Exploration"},
+              {"name": "Coastal Routes"}
+            ]
+          },
+          {
+            "name": "Multiday Expeditions (2–3 days)",
+            "items": [
+              {"name": "Jungle Camping"},
+              {"name": "Beach Camping"},
+              {"name": "Combined Routes"},
+              {"name": "Wilderness Survival"}
+            ]
+          },
+          {
+            "name": "Specialized Hikes",
+            "items": [
+              {"name": "Photo Safari"},
+              {"name": "Night Hikes"},
+              {"name": "Rock Climbing"},
+              {"name": "Kayaking"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Spiritual Practices",
+        "slug": "spiritual",
+        "groups": [
+          {
+            "name": "Slavic Rituals",
+            "items": [
+              {"name": "Fire Ceremonies"},
+              {"name": "Lunar Rites"},
+              {"name": "Initiation Rituals"},
+              {"name": "Ancestral Circles"}
+            ]
+          },
+          {
+            "name": "Nature Practices",
+            "items": [
+              {"name": "Forest Meditation"},
+              {"name": "Sound Healing"},
+              {"name": "Elemental Work"},
+              {"name": "Vision Quest Preparation"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Crafts & Creativity",
+        "slug": "crafts",
+        "groups": [
+          {
+            "name": "Jewelry Making",
+            "items": [
+              {"name": "Wire-Wrapping Techniques"},
+              {"name": "Crystal Work"},
+              {"name": "Coral Pieces"},
+              {"name": "Custom Orders"}
+            ]
+          },
+          {
+            "name": "Woodwork",
+            "items": [
+              {"name": "Handcrafted Pipes"},
+              {"name": "Wood Carving"},
+              {"name": "Local Wood Furniture"},
+              {"name": "Decorative Objects"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Therapeutic Services",
+        "slug": "therapy",
+        "groups": [
+          {
+            "name": "Massage & Therapy",
+            "items": [
+              {"name": "Deep Massage"},
+              {"name": "Spinal Alignment"},
+              {"name": "Energy Balancing"},
+              {"name": "Sports Recovery"}
+            ]
+          },
+          {
+            "name": "Specialized Programs",
+            "items": [
+              {"name": "Detox Programs"},
+              {"name": "Stress Management"},
+              {"name": "Injury Work"},
+              {"name": "Personal Sessions"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Educational Programs",
+        "slug": "education",
+        "groups": [
+          {
+            "name": "Island Orientation",
+            "items": [
+              {"name": "Nature Tours"},
+              {"name": "Cultural Routes"},
+              {"name": "Culinary Workshops"},
+              {"name": "Historical Walks"}
+            ]
+          },
+          {
+            "name": "Survival Skills",
+            "items": [
+              {"name": "Navigation"},
+              {"name": "Water & Food"},
+              {"name": "Firecraft"},
+              {"name": "Shelter Building"}
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }
